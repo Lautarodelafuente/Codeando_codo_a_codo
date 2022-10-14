@@ -11,7 +11,7 @@ body{
     /* background-color: chocolate; */
     padding: 10px;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: minmax(50px,60px) minmax(200px,auto) minmax(50px,60px);
+    grid-template-rows: minmax(70px,100px) minmax(200px,auto) minmax(50px,60px);
 }
 
 .header {
@@ -86,3 +86,11 @@ body{
     
 }
 
+
+#logo {
+    width: minmax(60px 90px);
+    position: relative;
+    display: inline-block;
+    align-items: center;
+
+}
