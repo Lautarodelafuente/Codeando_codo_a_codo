@@ -5,9 +5,10 @@ body{
     color: white;
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
+    padding: 0;
 }
 
-a{
+header a{
     text-decoration: none;
     color: rgb(182, 181, 181);
 }
@@ -55,7 +56,7 @@ a{
     display: grid;
     grid-template-columns: 1fr;
     /* grid-template-rows: 0.1fr 0.1fr 3fr 0.5fr 0.5fr; */
-    grid-template-rows: auto minmax(30px,40px) minmax(200px,auto) minmax(50px,auto) minmax(40px,50px);
+    grid-template-rows: auto minmax(200px,auto) minmax(50px,auto) minmax(40px,50px);
     }
 
     .header {
@@ -65,6 +66,10 @@ a{
         margin: 0px;
         border: 0px;
         background-color: #03192E;
+    }
+
+    .topnavResponsive #myLinksResponsive{
+        display: none;
     }
 
     /* Hide the links inside the navigation menu (except for logo/home) */
@@ -113,28 +118,29 @@ a{
 
     .main {
         grid-column: 1/1;
-        border: 5px solid rgb(255, 255, 255);
-        grid-row: 3/3;
+        /* border: 5px solid rgb(255, 255, 255); */
+        grid-row: 2/2;
+        padding: 15px;
+
     }
 
-    .asideizq {
+    /* .asideizq {
         grid-column: 1/1;
         border: 5px solid rgb(255, 255, 255);
         grid-row: 2/2;
-    }
+    } */
 
     .asideder {
         grid-column: 1/1;
         border: 5px solid rgb(255, 255, 255);
-        grid-row: 4/4;
+        grid-row: 3/3;
     }
 
     .footer {
         grid-column: 1/1;
         border: 5px solid rgb(255, 255, 255);
-        grid-row: 5/5;
+        grid-row: 4/4;
     }
-    
 }
 
 /* Diseño para tablets o pc */
@@ -163,12 +169,16 @@ a{
     }
 
     .topnav{
+        display: none;
+    }
+
+    .topnavResponsive{
         display: flex;
         align-items: center;
         margin-right: 5px;
     }
 
-    .topnav a{
+    .topnavResponsive a{
         padding: 10px;
     }
     
