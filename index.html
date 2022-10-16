@@ -5,20 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codeando</title>
+
     <link rel="stylesheet" href="style-index.css">
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="menu.js"></script>
+    
 </head>
 <body>
     <div class="contenedor">
 
         <header class="grid header">
-            <img id="logo" src="img/icons8-coding-96.png" alt="Codeando">
-            <NAV>INICIO</NAV>
-            <NAV>TUTORIALES</NAV>
-            <NAV>CONTACTO</NAV>
+            <a href="" class="logo">
+                <img src="img/icons8-coding-96.png" alt="Codeando">
+                <h2 class="Nombre-pagina">Codeando...</h2>
+            </a>
+            
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>  
+            </a>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            
+        <div class="topnav">
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+              <a href="#">Inicio</a>
+              <a href="#">Tutoriales</a>
+              <a href="#">Contacto</a>
+              <a href="#">Acerca de</a>
+            
+            </div>
+        </div>
         </header>
-
+        
         <main class="grid main">
-            <article>
+            <article class="prueba">
                 <h1>Hola mundo!</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, et animi earum, error, at minus est iure ducimus magnam facere fuga delectus consequatur veritatis repudiandae! Quaerat voluptatibus maxime sequi aliquid.</p>
             </article>
