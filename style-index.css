@@ -148,8 +148,8 @@ header a{
   .contenedor{
         display: grid;
         padding: 0px;
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: auto minmax(200px,auto) minmax(50px,60px);
+        grid-template-columns: 1fr;
+        grid-template-rows: auto minmax(200px,auto) minmax(70px,auto) auto;
     }
     
     .header {
@@ -183,27 +183,30 @@ header a{
     }
     
     .main {
-        grid-column: 2/2;
-        border: 5px solid rgb(255, 255, 255);
+        grid-column: 1/1;
+        /* border: 5px solid rgb(255, 255, 255); */
         grid-row: 2/2;
+        padding: 20px;
+        align-items: center;
     }
     
-    .asideizq {
+    /* .asideizq {
         grid-column: 1/1;
         border: 5px solid rgb(255, 255, 255);
         grid-row: 2/2;
-    }
+    } */
     
     .asideder {
-        grid-column: 3/3;
-        border: 5px solid rgb(255, 255, 255);
-        grid-row: 2/2;
+        grid-column: 1/1;
+        /* border: 5px solid rgb(255, 255, 255); */
+        grid-row: 3/3;
+        padding: 15px;
     }
     
     .footer {
         grid-column: 1/4;
-        border: 5px solid rgb(255, 255, 255);
-        grid-row: 3/3;
+        /* border: 5px solid rgb(255, 255, 255); */
+        grid-row: 4/4;
     }
 }
 
