@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-index.css">
+    <title>formulario</title>
+    
+    <!-- FONT-AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="fontawesome/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome/fontawesome-free-6.2.0-web/css/fontawesome.min.css">
+    
+    <!--MENU-->
+    <script src="menu.js"></script>
+</head>
+<body id="contacto">
+    <div >
+        <header class="grid header">
+            <a href="" class="logo">
+                <img src="img/icons8-coding-96.png" alt="Codeando">
+                <h2 class="Nombre-pagina">Codeando...</h2>
+            </a>
+            
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>  
+            </a>
+        
+        <div class="topnav">
+            <div id="myLinks">
+              <a href="index2.html">Inicio</a>
+              <a href="#">Tutoriales</a>
+              <a href="contacto.html">Contacto</a>
+              <a href="acerca.html">Acerca de</a>
+            </div>
+        </div>
+        </header> 
+        <form action="" method="post" id="formulario">
+            <div class="formulario">
+                <h1 class="titulo_form">Envianos un mensaje</h1>
+                <div class="grupo">
+                    <input  type="text" name="name" placeholder="Nombre" required>
+                </div>
+                <div class="grupo">
+                    <input type="email" name="mail" placeholder="Email" required>
+                </div> 
+                <div class="grupo">
+                    <input type="text" name="number" placeholder="Telefono" required>
+                </div>
+                <div class="grupo">
+                    <textarea name="mensaje" rows="10" cols="30" placeholder="Mensaje" required></textarea>
+                </div>
+                <div class="div_btn">
+                    <button type="submit" id="btnEnviar" name="btnEnviar" class="btnEnviar">ENVIAR</button>
+                </div>
+            </div>
+        </form>
+        <footer>
+            <div class="footer">
+                <div class="logo"></div>
+                <div >
+                    <div class="footer_img">
+                        <img src="img/icons8-coding-96.png" alt="Codeando" id="logo_footer">
+                    </div>
+                    <p>© 2022 Codeando</p>
+                    <div class="iconos_footer">
+                        <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+          </footer>
+    </div>
+</body>
