@@ -5,6 +5,7 @@ body{
     color: white;
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
+    padding: 0;
 }
 
 h1{
@@ -12,7 +13,8 @@ h1{
     font-size: 2.6em;
     text-decoration: none;
 }
-a{
+
+header a{
     text-decoration: none;
     color: rgb(182, 181, 181);
 }
@@ -70,6 +72,10 @@ a{
         margin: 0px;
         border: 0px;
         background-color: #03192E;
+    }
+
+    .topnavResponsive #myLinksResponsive{
+        display: none;
     }
 
     /* Hide the links inside the navigation menu (except for logo/home) */
@@ -150,8 +156,8 @@ a{
   .contenedor{
         display: grid;
         padding: 0px;
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: auto minmax(200px,auto) minmax(50px,60px);
+        grid-template-columns: 1fr;
+        grid-template-rows: auto minmax(200px,auto) minmax(70px,auto) auto;
     }
     
     .header {
@@ -171,12 +177,16 @@ a{
     }
 
     .topnav{
+        display: none;
+    }
+
+    .topnavResponsive{
         display: flex;
         align-items: center;
         margin-right: 5px;
     }
 
-    .topnav a{
+    .topnavResponsive a{
         padding: 10px;
     }
     
