@@ -5,6 +5,8 @@ body{
     color: white;
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
+    padding: 0;
+    min-width: 390px;
 }
 
 h1{
@@ -12,15 +14,33 @@ h1{
     font-size: 2.6em;
     text-decoration: none;
 }
-a{
+
+header a{
     text-decoration: none;
-    color: rgb(182, 181, 181);
+    color: rgb(255, 255, 255);
+}
+
+/* Add a grey background color on mouse-over */
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+    background-color: #04AA6D;
+    color: white;
 }
 
 .logo{
     display: flex;
     align-items: center;
     max-width: 315px;
+}
+
+.logo:hover{
+    background-color: initial;
+    color: white;
 }
 
 .logo img {
@@ -59,10 +79,10 @@ a{
     .contenedor{
     display: grid;
     grid-template-columns: 1fr;
-    /* grid-template-rows: 0.1fr 0.1fr 3fr 0.5fr 0.5fr; */
     grid-template-rows: auto minmax(30px,40px) minmax(200px,auto) minmax(50px,auto) minmax(40px,50px);
     }
 
+    /* HEADER */
     .header {
         grid-column: 1/1;
         grid-row: 1/1;
@@ -72,77 +92,106 @@ a{
         background-color: #03192E;
     }
 
-    /* Hide the links inside the navigation menu (except for logo/home) */
-    .topnav #myLinks {
-        display: none;
-    }
+        .topnavResponsive #myLinksResponsive{
+            display: none;
+        }
+
+        /* Hide the links inside the navigation menu (except for logo/home) */
+        .topnav #myLinks {
+            display: none;
+        }
+        
+        /* Style navigation menu links */
+        .topnav a {
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+            position: relative;
+            text-align: right;
+            padding-right: 30px;
+        }
+        
+        /* Style the hamburger menu */
+        .icon {
+            /* background: rgb(37, 43, 68); */
+            color: white;
+            padding: 10px 12px;
+            text-decoration: none;
+            font-size: 25px;
+            margin-right: 5x; 
+            position: absolute;
+            display: block;
+            right: 30px;
+            top: 0px;
+            margin-top: 22.5px;
+        }
+        
+        /* Add a grey background color on mouse-over */
+        a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        /* Style the active link (or home/logo) */
+        .active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+    /* MAIN */
+    /* #main_index{
+        padding: 0% !important;
+    } */
+
+        .contenedor_tutorial{
+            display: block !important;
+            text-align: center;
+            margin: 30px;
+        }
+
+        .contenido_img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            vertical-align: bottom;
+            margin: 40px 0px 40px 0px;
+        } 
+
+        .programando_img{
+            height: 12em;
+            border-radius: 15px;
+            text-align: center;
+            /* margin: 10px; */
+        }  
+
+        .contenido{
+            margin-bottom: 50px;
+        }
+
+        .html{
+            border-bottom: double;
+            border-top: double;
+        }
+
+        .js{
+            border-bottom: double;
+            border-top: double;
+        }
+
+        .fa-html5, .fa-css3-alt, .fa-square-js, .fa-python{
+            align-items: center;
+            display: flex;
+            font-size: 3em !important;
+            padding: 0 0.5em !important;
+        }
     
-    /* Style navigation menu links */
-    .topnav a {
-        color: white;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        display: block;
-        position: relative;
-        text-align: right;
-        padding-right: 30px;
-    }
-    
-    /* Style the hamburger menu */
-    .icon {
-        /* background: rgb(37, 43, 68); */
-        color: white;
-        padding: 10px 12px;
-        text-decoration: none;
-        font-size: 25px;
-        margin-right: 5x; 
-        position: absolute;
-        display: block;
-        right: 30px;
-        top: 0px;
-        margin-top: 22.5px;
-    }
-    
-    /* Add a grey background color on mouse-over */
-    a:hover {
-        background-color: #ddd;
-        color: black;
-    }
-    
-    /* Style the active link (or home/logo) */
-    .active {
-        background-color: #04AA6D;
-        color: white;
-    }
+    /* FOOTEr */
     .footer {
         grid-column: 1/1;
-        /*border: 5px solid rgb(255, 255, 255);*/
         grid-row: 5/5;
     }
-
-    #main_index{
-        padding: 0% !important;
-    }
-    .contenedor_tutorial{
-        display: block !important; 
-    }
-    .contenido_img{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .contenido{
-        margin: 3em 0em;
-        padding-bottom: 3.5em;
-    }
-
-    .fa-html5, .fa-css3-alt, .fa-square-js {
-        font-size: 1.5em !important;
-        padding: 0 1em !important;
-    }
-
 }
 
 /* Diseño para tablets o pc */
@@ -150,13 +199,14 @@ a{
   .contenedor{
         display: grid;
         padding: 0px;
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: auto minmax(200px,auto) minmax(50px,60px);
+        grid-template-columns: 1fr;
+        grid-template-rows: auto minmax(200px,auto) minmax(70px,auto) auto;
     }
     
+    /* HEADER */
     .header {
-         display: flex; 
-        grid-column: 1/4;
+        display: flex; 
+        grid-column: 1/1;
         grid-row: 1/1;
         border: 0px;
         background-color: #03192E;
@@ -166,22 +216,96 @@ a{
         margin: 0px;
     }
 
-    .icon{
-        display: none;
+        .icon{
+            display: none;
+        }
+
+        .topnav{
+            display: none;
+        }
+
+        .topnavResponsive{
+            display: flex;
+            align-items: center;
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+
+        .topnavResponsive a{
+            padding: 6px;
+        }
+        
+        .fa-html5, .fa-css3-alt, .fa-square-js, .fa-python{
+            align-items: center;
+            display: flex;
+            font-size: 3em !important;
+            padding: 0 1em !important;
+        }
+
+    /* MAIN */
+    main{
+        grid-column: 1/1;
+        grid-row: 2/2;
+        border: solid 2px black;
     }
 
-    .topnav{
-        display: flex;
-        align-items: center;
-        margin-right: 5px;
-    }
+        .contenedor_tutorial{
+            display: grid;
+            grid-column: 50% 50%; 
+            text-align: center;
+            padding: 0%;
+            margin: 0%;
+        }
 
-    .topnav a{
-        padding: 10px;
-    }
+        .html{
+            grid-column: 1/1;
+            grid-row: 1/1;
+            align-items: center;
+            /* border: solid white 1px ; */
+        }
+
+        .css{
+            grid-column: 2/2;
+            grid-row: 1/1;
+            align-items: center;
+            /* border: solid white 1px ; */
+        }
+
+        .js{
+            grid-column: 1/1;
+            grid-row: 2/2;
+            align-items: center;
+            /* border: solid white 1px ; */
+        }
+
+        .python{
+            grid-column: 2/2;
+            grid-row: 2/2;
+            align-items: center;
+            /* border: solid white 1px ; */
+        }
+
+        .programando_img{
+            display: block;
+            height: 12em;
+            border-radius: 15px;
+            text-align: center;
+        } 
+        .contenido_img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            vertical-align: bottom;
+        }  
+
+        .contenido{
+            margin: 0.5em;
+            padding: 2em;
+        }
     
+    /* FOOTER */
     .footer {
-        grid-column: 1/4;
+        grid-column: 1/1;
         /*border: 5px solid rgb(255, 255, 255);*/
         grid-row: 3/3;
     }
@@ -195,9 +319,8 @@ a{
     padding:  20px 20px 20px 0px;
     box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
     border-radius: 10px;
-    margin: 0% 15% 5% 15%;
+    margin: 30px 5% 5% 5%;
 }
-
 
 .formulario{
     margin: auto;
@@ -209,7 +332,6 @@ a{
     margin: 1.8em;
 }
 
-
 input, textarea{
     border-radius: 15px;
     border-color: #6a6a6a;
@@ -217,8 +339,10 @@ input, textarea{
     padding: 1em 1em 1em 0.5em;
     display: block;
     width: 100%;
+    font-weight: 800;
+    font-size: 14px;
+    font-style: italic;
 }
-
 
 #btnEnviar{
     background-color: white;
@@ -227,7 +351,6 @@ input, textarea{
     border-color: white;
     padding: 1em 1.5em;
 }
-
 
 #btnEnviar:hover{
     background-color: #3172a3;
@@ -248,31 +371,38 @@ input, textarea{
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    text-align: center;
 }
-
 
 footer #logo_footer{
     width: 10%;
     padding: 0.5em;
 }
+
 footer p{
     display: flex;
     height: 2px;
     justify-content: center;
     align-items: center;
 }
+
 .iconos_footer{
     display: flex;
     justify-content: center;
-    padding: 1em 1.6em;
+    padding: 0.5em 1.6em;
+    color: white;
 }
+
 .iconos_footer a{
-    padding: 0em 1.5em;
+    padding: 0 1em;
+    color: white;
 }
+
 .footer_img{
     display: flex;
     justify-content: center;
     align-content: center;
+    text-align: center;
 }
 
 
@@ -281,22 +411,8 @@ footer p{
 #main_index{
     background: rgb(49,114,163);
     background: radial-gradient(circle, rgba(49,114,163,1) 0%, rgba(0,0,0,1) 100%);
-    padding:  20px 20px 20px 0px;
-    margin: auto;
-    padding: 0.1em 3.5em;
-
 }
-
-.contenedor_tutorial{
-    display: flex;
-    justify-content: center;
-    padding: 3em 2em;
-}
-
-.programando_img{
-    height: 12em;
-    border-radius: 15px;
-}
+ 
 
 #tutorial_btn{
     display: block;
@@ -324,11 +440,9 @@ footer p{
 
 }
 
-.fa-html5, .fa-css3-alt, .fa-square-js {
+/* .fa-html5, .fa-css3-alt, .fa-square-js {
     font-size: 2.5em;
     padding: 0 1.6em;
-}
+} */
 
-.contenido{
-    margin: 0.5em;
-}
+
