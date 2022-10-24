@@ -259,9 +259,13 @@ a:hover {
 
         .contenido{
             margin: 30px !important;
-            padding: 5px;
+            padding: 5px 30px 5px 30px;
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 1);
         } 
+
+        .contenido p {
+            text-align: center; 
+        }
 
         .contenedor_tutorial > hr{
             border-top: double;
@@ -332,7 +336,6 @@ a:hover {
             align-items: center;
             padding: 0;
             margin: 0;
-            /* left: 50px; */
             padding-right: 30px;
             /* border: white 2px solid; */
         }
@@ -348,6 +351,7 @@ a:hover {
             padding: 15px 5px 15px 5px;
             margin: 0;
             /* border: white 2px solid; */
+            overflow: auto;
             font-size: 17px;  
             font-family: 'Courier New', Courier, monospace;
         }
@@ -456,6 +460,10 @@ a:hover {
         .contenido{
             padding: 2em;
         } 
+
+        .contenido p {
+            text-align: center; 
+        }
 
         .contenedor_tutorial hr{
             display: none;
@@ -627,8 +635,6 @@ a:hover {
 footer #logo_footer{
     width:80px;
     padding: 10px 20px 10px;
-
-
 }
 
 footer p{
@@ -668,6 +674,10 @@ footer p{
     text-align: center;
 }
 
+.footer_img a:hover {
+    background-color: inherit;
+    transform: scale(1.1);
+}
 
 /*CONTENIDO DEL INDEX*/
 
@@ -687,13 +697,18 @@ footer p{
     border-color: white;
     padding: 1em ;
     text-align: center;
+    text-decoration: none;
 }
 
 #tutorial_btn:hover{
     background-color: #3172a3;
     color: white;
     border-radius: 12px;
-    border-color: #5aaae7;
+    font-size: 17px;
+    font-weight: 900;
+    border-color: #92bee0;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 1);
 }
 
 

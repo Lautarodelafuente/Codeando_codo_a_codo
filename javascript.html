@@ -19,38 +19,71 @@
 
 <body>
     <div class="contenedor">
-        <header class="header">
-            <a href="" class="logo">
+        <header class="grid header">
+            <a href="index.html" class="logo">
                 <img src="img/icons8-coding-96.png" alt="Codeando">
                 <h2 class="Nombre-pagina">Codeando...</h2>
             </a>
             
             <!-- Boton de menu -->
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>  
-            </a>
-        
+                <i class="fa fa-bars"></i>  
+                </a>
+            
             <div class="topnav">
                 <div id="myLinks">
                 <!-- Links de navegacion -->
-                <a href="index.html">Inicio</a>
-                <a href="#">Tutoriales</a>
-                <a href="contacto.html">Contacto</a>
-                <a href="acerca.html">Acerca de</a>
+                    <div id="menu"><a href="index.html">Inicio</a></div>
+                    
+                    
+                    
+                    <div id="menu"><a href="contacto.html">Contacto</a></div>
+                    
+                    <div id="menu"><a href="acerca.html">Acerca de</a></div>
+    
+                    <div  class="dropdown">
+                        
+                        <button id="menu" class="dropbtn" onclick="openMenu()">
+                            <i class="fa fa-caret-down"></i> Tutoriales  
+                        </button> 
+                        
+                        <div class="dropdown-content">
+                            <a href="html.html">HTML</a>
+                            <a href="css.html">CSS</a>
+                            <a href="javascript.html">javaScript</a>
+                            <a href="python.html">Python</a>
+                        </div>
+                    </div> 
+    
                 </div>
             </div>
-
+    
             <div class="topnavResponsive">
                 <!-- Links de navegacion -->
                 <div id="myLinksResponsive">
-                    <a href="index.html">Inicio</a>
-                    <a href="#">Tutoriales</a>
-                    <a href="contacto.html">Contacto</a>
-                    <a href="acerca.html">Acerca de</a> 
+                    
+                    <a id="menu-responsive" href="index.html">Inicio</a>
+                    <!-- <a  href="#">Tutoriales</a> -->
+                    
+                    <div class="dropdown-responsive">
+                        <button id="menu-responsive" class="dropbtn-responsive">Tutoriales 
+                        <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content-responsive">
+                            <a href="html.html">HTML</a>
+                            <a href="css.html">CSS</a>
+                            <a href="javascript.html">javaScript</a>
+                            <a href="python.html">Python</a>
+                        </div>
+                    </div> 
+                    
+                    <a id="menu-responsive" href="contacto.html">Contacto</a>
+                    
+                    <a id="menu-responsive" href="acerca.html">Acerca de</a>
+                
                 </div>
             </div>
-
-        </header>
+        </header> 
 
         <aside class="aside">
             <ul> <a href="#introduccion_js">Introducción</a> </ul>
@@ -168,18 +201,24 @@
             </div>
         </main>
 
-        <footer class="footer">
-            <div class="contenedor-footer">
+        <footer>
+            <div class="footer">
+    
                 <div class="footer_img">
-                    <img src="img/icons8-coding-96.png" alt="Codeando" id="logo_footer">
+                    <a href="index.html">
+                        <img src="img/icons8-coding-96.png" alt="Codeando" id="logo_footer">
+                    </a>
                 </div>
+    
                 <p>© 2022 Codeando</p>
+    
                 <div class="iconos_footer">
                     <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
                     <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
                     <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
+    
         </footer>
     </div>
 </body>
