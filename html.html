@@ -18,140 +18,141 @@
 </head>
 
 <body>
-    <div>
-        <header class="grid header">
+    <div class="contenedor">
+        <header class="header">
             <a href="" class="logo">
                 <img src="img/icons8-coding-96.png" alt="Codeando">
                 <h2 class="Nombre-pagina">Codeando...</h2>
             </a>
             
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <!-- Boton de menu -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars"></i>  
             </a>
         
-        <div class="topnav">
-            <div id="myLinks">
-              <a href="index2.html">Inicio</a>
-              <a href="#">Tutoriales</a>
-              <a href="contacto.html">Contacto</a>
-              <a href="acerca.html">Acerca de</a>
+            <div class="topnav">
+                <div id="myLinks">
+                <!-- Links de navegacion -->
+                <a href="index.html">Inicio</a>
+                <a href="#">Tutoriales</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="acerca.html">Acerca de</a>
+                </div>
             </div>
-        </div>
+
+            <div class="topnavResponsive">
+                <!-- Links de navegacion -->
+                <div id="myLinksResponsive">
+                    <a href="index.html">Inicio</a>
+                    <a href="#">Tutoriales</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="acerca.html">Acerca de</a> 
+                </div>
+            </div>
+
         </header> 
-        <main id="main_tutorial">
-            <div id="introduccion_html">
-                <div>
-                    <h1>¿Que es HTML?</h1>
-                </div>
-                <div>
-                    <p>Significa HyperText Markup Language (Lenguaje de marcado de hipertexto), es el componente más básico y en el se define el contenido de las páginas web. Básicamente se trata de un conjunto de etiquetas que sirven para definir el texto y otros elementos que compondrán una página web, como imágenes, listas, vídeos, etc.</p>
-                    <p>HTML consiste en una serie de elementos, que usarás para encerrar diferentes partes del contenido con el fin de que se vean o se comporten de una manera determinada.</p>
-                </div>
-            </div>
-            <div id="editor_html">
-                <div>
-                    <h1>¿Como utilizo HTML?</h1>
-                </div>
-                <div>
-                    <p>Un simple editor de texto es todo lo que necesita para utilizar HTML.</p>
-                    <p>Las páginas web se pueden crear y modificar utilizando editores HTML profesionales.</p>
-                    <h3>A continuacion se nombran algunos editores de texto para usar HTML</h3>
-                    <ul>Notepad ++</ul>
-                    <ul>Visual code</ul>
-                    <ul>Sublime text</ul>
-                    <ul>Geany</ul>
-                    <ul>VIM</ul>
-                    <ul>Emacs</ul>
-            </div>
-            <div id="elementos_html">
-                <div>
-                    <h1>¿Que son las elementos HTML?</h1>
-                </div>
-                <div>
-                    <p>El código HTML se compone por diferentes etiquetas que el navegador interpretará y a través de las cuales puede crear o modificar la apariencia de un documento.</p>
-                    <p>Las etiquetas HTML son fragmentos de código que nos permiten crear elementos HTML. Los elementos son la estructura básica de HTML. Dichos elementos tienen dos propiedades básicas: atributos y contenido.</p>
-                    <img src="img/html.png" alt="elemento HTML">
-                    <p>Un elemento, para que sea válido,  generalmente tiene una etiqueta de inicio (parte azul en la imagen) y una etiqueta de cierre (parte azul en la imagen).</p>
-                    <p>Como podemos ver en el ejemplo, existe una etiqueta de apertura, y una etiqueta de cierre. El texto que hay en medio de ambas etiquetas, “Esto es un ejemplo” (parte verde) se conoce como contenido del elemento.
-                    Aparte de las etiquetas y el contenido, un elemento puede tener atributos. Los atributos son la forma en que los creadores o desarrolladores web definen las propiedades de un elemento.
-                    Los atributos deben insertarse en forma de lista y separados por espacios, siempre dentro de la etiqueta para que sea válido. El atributo debe añadirse después del nombre del elemento o de la etiqueta html y precedidos por un espacio.
-                    Cada uno de estos elementos está compuesto por un nombre, el signo igual (=) y el valor o función que se encuentra a veces entre comillas (parte amarilla en la imagen).
-                    De manera resumina entonces los atributos tienen dos secciones:</p>
-                    <ul>
-                        <p>Nombre: El nombre identifica la información adicional que un usuario quiere agregar.</p>
-                    </ul>
-                    <ul>
-                        <p>Valor del atributo: Da más detalles que el anterior.</p>
-                    </ul>
-
-                    <h3>¿Cuáles son las etiquetas HTML básicas?</h3>
-                    <img src="img/html2.jpg" alt="etiquetas HTML">
-                </div>
-            </div>
-            <div id="doc_html">
-                <div>
-                    <h1>¿Como empezar un codigo HTML?</h1>
-                </div>
-                <div>
-                    <p>Todos los documentos HTML deben comenzar con una declaración de tipo de documento:</p>
-                    <img src="img/html3.jpg" alt="DOCTYPE HTML">
-                    <p>La declaración "!DOCTYPE" representa el tipo de documento y ayuda a los navegadores a mostrar correctamente las páginas web. Solo debe aparecer una vez, en la parte superior de la página (antes de cualquier etiqueta HTML).</p>
-                </div>
-            </div>
-            <div id="estructura_html">
-                <div>
-                    <h1>Estructura html</h1>
-                </div>
-                <div>
-                    <p>Las paginas web en general cuentan con secciones definidas segun el tipo de contenido que contenga:</p>
-                    <img src="img/estructura-etiquetas-html.png" alt="estructura html">
-                    <p>Como estructura basica se esperarita encontrar un header, seguido de un nav que ocuparan la parte superior. Luego la parte cetral puede estar ocupado al 100% por el condetindo del body (o seccion), asi como tambien puede estar ocupado por un bosy y un aside. Por ultimo, en la parte inferior se ubica en footer. </p>
-            </div>
-
-            <div>
-                <H3>Clases grabadas</H3>
-            </div>
-            <div class="contenido">
-                <p>Clase 1 html</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/q7oM4tBINg0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <div class="contenido">
-                <p>Clase 2 html</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/EXZ5jwvrjiQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="contenido">
-                <p>Clase 3 html</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/G-CPGmLworU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="contenido">
-                <p>Clase 4 html</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Il9U5G70PJ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-        </main>
-        <aside>
-            <div class="contenedor_aside">
-                <ul> <a href="#introduccion_html">Introducción</a> </ul>
-                <ul> <a href="#editor_html">Editores HTML</a> </ul>
-                <ul> <a href="#doc_html">!DOCTYPE en HTML</a> </ul>
-                <ul> <a href="#elementos_html">Elementos y atributos</a> </ul>
-                <ul> <a href="#estructura_html">Estructura web</a> </ul>
-            </div>
+        
+        <aside class="aside">
+            <ul> <a href="#introduccion_html">Introducción</a> </ul>
+            <ul> <a href="#editor_html">Editores HTML</a> </ul>
+            <ul> <a href="#doc_html">!DOCTYPE en HTML</a> </ul>
+            <ul> <a href="#elementos_html">Elementos y atributos</a> </ul>
+            <ul> <a href="#estructura_html">Estructura web</a> </ul>
         </aside>
-        <footer>
-            <div class="contenedor_footer">
-                <div class="logo"></div>
-                <div >
-                    <div class="footer_img">
-                        <img src="img/icons8-coding-96.png" alt="Codeando" id="logo_footer">
+
+        <main class="main">
+            <div class="contenido">
+                <div id="introduccion_html" class="secciones">
+                    <div>
+                        <h1>¿Que es HTML?</h1>
                     </div>
-                    <p>© 2022 Codeando</p>
-                    <div class="iconos_footer">
-                        <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <div>
+                        <p>Significa HyperText Markup Language (Lenguaje de marcado de hipertexto), es el componente más básico y en el se define el contenido de las páginas web. Básicamente se trata de un conjunto de etiquetas que sirven para definir el texto y otros elementos que compondrán una página web, como imágenes, listas, vídeos, etc.</p>
+                        <p>HTML consiste en una serie de elementos, que usarás para encerrar diferentes partes del contenido con el fin de que se vean o se comporten de una manera determinada.</p>
                     </div>
+                </div>
+                <div id="editor_html" class="secciones">
+                    <div>
+                        <h1>¿Como utilizo HTML?</h1>
+                    </div>
+                    <div>
+                        <p>Un simple editor de texto es todo lo que necesita para utilizar HTML.</p>
+                        <p>Las páginas web se pueden crear y modificar utilizando editores HTML profesionales.</p>
+                        <h3>A continuacion se nombran algunos editores de texto para usar HTML</h3>
+                        <ul>Notepad ++</ul>
+                        <ul>Visual code</ul>
+                        <ul>Sublime text</ul>
+                        <ul>Geany</ul>
+                        <ul>VIM</ul>
+                        <ul>Emacs</ul>
+                    </div>
+                </div>
+                <div id="elementos_html" class="secciones">
+                    <div>
+                        <h1>¿Que son las elementos HTML?</h1>
+                    </div>
+                    <div>
+                        <p>El código HTML se compone por diferentes etiquetas que el navegador interpretará y a través de las cuales puede crear o modificar la apariencia de un documento.</p>
+                        <p>Las etiquetas HTML son fragmentos de código que nos permiten crear elementos HTML. Los elementos son la estructura básica de HTML. Dichos elementos tienen dos propiedades básicas: atributos y contenido.</p>
+                        <div class="div-imagen">
+                            <img src="img/html.png" alt="elemento HTML" class="imagen_main1">
+                        </div>
+                        <p>Un elemento, para que sea válido,  generalmente tiene una etiqueta de inicio (parte azul en la imagen) y una etiqueta de cierre (parte azul en la imagen).</p>
+                        <p>Como podemos ver en el ejemplo, existe una etiqueta de apertura, y una etiqueta de cierre. El texto que hay en medio de ambas etiquetas, “Esto es un ejemplo” (parte verde) se conoce como contenido del elemento.
+                        Aparte de las etiquetas y el contenido, un elemento puede tener atributos. Los atributos son la forma en que los creadores o desarrolladores web definen las propiedades de un elemento.
+                        Los atributos deben insertarse en forma de lista y separados por espacios, siempre dentro de la etiqueta para que sea válido. El atributo debe añadirse después del nombre del elemento o de la etiqueta html y precedidos por un espacio.
+                        Cada uno de estos elementos está compuesto por un nombre, el signo igual (=) y el valor o función que se encuentra a veces entre comillas (parte amarilla en la imagen).
+                        De manera resumina entonces los atributos tienen dos secciones:</p>
+                        <ul>
+                            <p>Nombre: El nombre identifica la información adicional que un usuario quiere agregar.</p>
+                        </ul>
+                        <ul>
+                            <p>Valor del atributo: Da más detalles que el anterior.</p>
+                        </ul>
+    
+                        <h3>¿Cuáles son las etiquetas HTML básicas?</h3>
+                        <div class="div-imagen">
+                            <img src="img/html2.jpg" alt="etiquetas HTML" class="imagen_main">
+                        </div>
+                    </div>
+                </div>
+                <div id="doc_html" class="secciones">
+                    <div>
+                        <h1>¿Como empezar un codigo HTML?</h1>
+                    </div>
+                    <div>
+                        <p>Todos los documentos HTML deben comenzar con una declaración de tipo de documento:</p>
+                        <div class="div-imagen">
+                            <img src="img/html3.jpg" alt="DOCTYPE HTML" class="imagen_main4">
+                        </div>
+                        <p>La declaración "!DOCTYPE" representa el tipo de documento y ayuda a los navegadores a mostrar correctamente las páginas web. Solo debe aparecer una vez, en la parte superior de la página (antes de cualquier etiqueta HTML).</p>
+                    </div>
+                </div>
+                <div id="estructura_html" class="secciones">
+                    <div>
+                        <h1>Estructura html</h1>
+                    </div>
+                    <div>
+                        <p>Las paginas web en general cuentan con secciones definidas segun el tipo de contenido que contenga:</p>
+                        <div class="div-imagen">
+                            <img src="img/estructura-etiquetas-html.png" alt="estructura html" class="imagen_main">
+                        </div>
+                        <p>Como estructura basica se esperarita encontrar un header, seguido de un nav que ocuparan la parte superior. Luego la parte cetral puede estar ocupado al 100% por el condetindo del body (o seccion), asi como tambien puede estar ocupado por un bosy y un aside. Por ultimo, en la parte inferior se ubica en footer. </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="contenedor-footer">
+                <div class="footer_img">
+                    <img src="img/icons8-coding-96.png" alt="Codeando" id="logo_footer">
+                </div>
+                <p>© 2022 Codeando</p>
+                <div class="iconos_footer">
+                    <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
         </footer>

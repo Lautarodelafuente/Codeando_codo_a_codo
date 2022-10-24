@@ -17,137 +17,163 @@
     <script src="menu.js"></script>
 </head>
 <body>
-    <div>
-        <header class="grid header">
+    <div class="contenedor">
+        <header class="header">
             <a href="" class="logo">
                 <img src="img/icons8-coding-96.png" alt="Codeando">
                 <h2 class="Nombre-pagina">Codeando...</h2>
             </a>
             
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <!-- Boton de menu -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars"></i>  
             </a>
         
-        <div class="topnav">
-            <div id="myLinks">
-              <a href="index2.html">Inicio</a>
-              <a href="#">Tutoriales</a>
-              <a href="contacto.html">Contacto</a>
-              <a href="acerca.html">Acerca de</a>
-            </div>
-        </div>
-        </header> 
-        <main id="main_tutorial">
-            <div id="introduccion_css">
-                <div>
-                    <h1>¿Que es CSS?</h1>
-                </div>
-                <div>
-                    <p>Sus siglas provienen de "Cascading Stylesheets", que en español seria Hojas de estilo en cascada. Esta es la siguiente tecnología que aprenderemos después de HTML. Mientras que HTML se utiliza para definir la estructura y la semántica del contenido, CSS se usa para darle estilo y posicionarlo visualmente. CSS se puede usar, por ejemplo, para cambiar la fuente, el color, el tamaño y el espacio del contenido, para formar múltiples columnas, agregar animaciones y otros elementos decorativos.</p>
+            <div class="topnav">
+                <div id="myLinks">
+                <!-- Links de navegacion -->
+                <a href="index.html">Inicio</a>
+                <a href="#">Tutoriales</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="acerca.html">Acerca de</a>
                 </div>
             </div>
-            <div id="sintaxis_css">
-                <div>
-                    <h1>Sintaxis CSS</h1>
-                </div>
-                <div>
-                    <p>El selector apunta al elemento HTML que desea diseñar. El bloque de declaración contiene una o más declaraciones separadas por punto y coma. Cada declaración incluye un nombre de propiedad CSS y un valor, separados por dos puntos.
-                    Varias declaraciones CSS se separan con punto y coma, y​ los bloques de declaración están rodeados por llaves.</p>
 
-                    <img src="img/css1.jpg" alt="sintaxis css">
-            </div>
-            <div id="incorporar_css">
-                <div>
-                    <h1>¿Como incorporamos la hoja de estilo?</h1>
-                </div>
-                <div>
-                    <p>Cuando un navegador lee una hoja de estilo, formateará el documento HTML de acuerdo con la información de la hoja de estilo.</p>
-                    <p>Hay tres formas de insertar una hoja de estilo:</p>
-                    <ul>CSS externo: En el head del documento HTML tenemos que incluir una referencia al archivo .css dentro del elemento "link". Es la forma más recomendada.</ul>
-                    <img src="img/css4.png" alt="Estilo externo">
-                    <p>La referencia al archivo externo debe incluir la ruta completa, el nombre del archivo y su extensión si se encuentra en alguna subcarpeta dentro del proyecto.</p>
-                    <ul>CSS interno: Incluimos la etiqueta style dentro del head en nuestro documento. Opción menos recomendable.</ul>
-                    <img src="img/css3.jpg" alt="Estilo interno">
-                    <p>En el ejemplo anterior todas las etiquetas h1 tendrán color de fuente blanco y fondo de color rojo.</p>
-                    <ul>CSS en linea: Dentro del atributo style=” ” incorporamos los estilos que se van a aplicar solo en esa misma etiqueta. Opción no recomendable.</ul>
-                    <img src="img/css2.png" alt="Estilo en linea">
-                    <p>Utilizando el atributo style dentro de la etiqueta le proporcionamos estilo al párrafo. Se pueden utilizar a la vez varias parejas de: propiedad: valor</p>
+            <div class="topnavResponsive">
+                <!-- Links de navegacion -->
+                <div id="myLinksResponsive">
+                    <a href="index.html">Inicio</a>
+                    <a href="#">Tutoriales</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="acerca.html">Acerca de</a> 
                 </div>
             </div>
-            <div id="selectores_css">
-                <div>
-                    <h1>Selectores en CSS</h1>
+
+        </header> 
+
+        <aside class="aside">
+            <ul> <a href="#introduccion_css">Introducción</a> </ul>
+            <ul> <a href="#sintaxis_css">Sintaxis</a> </ul>
+            <ul> <a href="#incorporar_css">Incorporar CSS</a> </ul>
+            <ul> <a href="#selectores_css">Selectores </a></ul>
+            <ul> <a href="#especificidad_css">Especificidad CSS</a> </ul>
+            <ul> <a href="#cajas_css">Modelo de cajas CSS</a> </ul>
+        </aside>
+
+        <main class="main">
+            <div class="contenido">
+                <div id="introduccion_css" class="secciones">
+                    <div>
+                        <h1>¿Que es CSS?</h1>
+                    </div>
+                    <div>
+                        <p>Sus siglas provienen de "Cascading Stylesheets", que en español seria Hojas de estilo en cascada. Esta es la siguiente tecnología que aprenderemos después de HTML. Mientras que HTML se utiliza para definir la estructura y la semántica del contenido, CSS se usa para darle estilo y posicionarlo visualmente. CSS se puede usar, por ejemplo, para cambiar la fuente, el color, el tamaño y el espacio del contenido, para formar múltiples columnas, agregar animaciones y otros elementos decorativos.</p>
+                    </div>
                 </div>
-                <div>
-                    <p>Indican el elemento al que se debe aplicar el estilo. La declaración indica "qué hay que hacer" y el selector indica "a quién hay que aplicarlo". Hay cuatro selectores básicos:</p>
-                    <ul>Selector universal: Selecciona todos los
-                        elementos de HTML. Se indica con un * (asterisco) y aplica el estilo a todos los elementos contenidos en el
-                        documento HTML.</ul>
-                    <ul>selector de etiqueta o tipo: Se utiliza
-                        para seleccionar una etiqueta específica. Este selector afecta a una etiqueta específica. Esto nos permite ser más precisos a la
-                        hora de aplicar estilos a elementos particulares. Por ejemplo, a todas las etiquetas
-                        h1 o p del documento.</ul>
-                    <ul>selector de clase: Se utiliza agregando
-                        el atributo class a los elementos que
-                        queramos aplicarles estilos. Se aplica con un punto (.) seguido del nombre que le asignemos al selector. Dentro
-                        del documento HTML se lo referencia dentro de la etiqueta usando el atributo class,
-                        con la siguiente estructura: class=“nombredelselector”</ul>
-                    <ul>selector de identificador (id): Similar a
-                        .class pero solo se aplica a una etiqueta
-                        individual. Se coloca con un numeral (#) en CSS y en el documento HTML se hace referencia al selector con id=“nombredelselector”, dentro de la etiqueta a la
-                        cual se aplica:</ul>
+                <div id="sintaxis_css" class="secciones">
+                    <div>
+                        <h1>Sintaxis CSS</h1>
+                    </div>
+                    <div>
+                        <p>El selector apunta al elemento HTML que desea diseñar. El bloque de declaración contiene una o más declaraciones separadas por punto y coma. Cada declaración incluye un nombre de propiedad CSS y un valor, separados por dos puntos.
+                        Varias declaraciones CSS se separan con punto y coma, y​ los bloques de declaración están rodeados por llaves.</p>
+    
+                        <div class="div-imagen">
+                            <img src="img/css1.jpg" alt="sintaxis css" class="imagen_main">
+                        </div>
                 </div>
-            </div>
-            <div id="especificidad_css">
-                <div>
-                    <h1>Especificidad</h1>
+                <div id="incorporar_css" class="secciones">
+                    <div>
+                        <h1>¿Como incorporamos la hoja de estilo?</h1>
+                    </div>
+                    <div>
+                        <p>Cuando un navegador lee una hoja de estilo, formateará el documento HTML de acuerdo con la información de la hoja de estilo.</p>
+                        <p>Hay tres formas de insertar una hoja de estilo:</p>
+                        <ul>CSS externo: En el head del documento HTML tenemos que incluir una referencia al archivo .css dentro del elemento "link". Es la forma más recomendada.</ul>
+                        <div class="div-imagen">
+                            <img src="img/css4.png" alt="Estilo externo" class="imagen_main1">
+                        </div>
+                        <p>La referencia al archivo externo debe incluir la ruta completa, el nombre del archivo y su extensión si se encuentra en alguna subcarpeta dentro del proyecto.</p>
+                        <ul>CSS interno: Incluimos la etiqueta style dentro del head en nuestro documento. Opción menos recomendable.</ul>
+                        <div class="div-imagen">
+                            <img src="img/css3.jpg" alt="Estilo interno" class="imagen_main">
+                        </div>
+                        <p>En el ejemplo anterior todas las etiquetas h1 tendrán color de fuente blanco y fondo de color rojo.</p>
+                        <ul>CSS en linea: Dentro del atributo style=” ” incorporamos los estilos que se van a aplicar solo en esa misma etiqueta. Opción no recomendable.</ul>
+                        <div class="div-imagen">
+                            <img src="img/css2.png" alt="Estilo en linea" class="imagen_main2">
+                        </div>
+                        <p>Utilizando el atributo style dentro de la etiqueta le proporcionamos estilo al párrafo. Se pueden utilizar a la vez varias parejas de: propiedad: valor</p>
+                    </div>
                 </div>
-                <div>
-                    <p>La especificidad es el mecanismo mediante el cual los navegadores deciden qué valores de una propiedad CSS son más relevantes para un elemento. Esto influye en la manera en que los estilos son aplicados. La especificidad está basada en las reglas de coincidencia que están compuestas por diferentes tipos de selectores CSS. La especificidad sólo se aplica cuando el mismo elemento es objetivo de múltiples
-                    declaraciones. Según las reglas de CSS, en caso de que un elemento sea objeto de una declaración directa, está siempre tendrá preferencia sobre las reglas heredadas
-                    de su ancestro.</p>
-                    <img src="img/css5.jpg" alt="especificidad css">
-                    <p>IMPORTANTE: Cuando varias declaraciones tienen igual especificidad, se aplicará al elemento la última declaración encontrada en el CSS.</p>
-            </div>
-            <div id="cajas_css">
-                <div>
-                    <h1>Modelo de cajas CSS</h1>
+                <div id="selectores_css" class="secciones">
+                    <div>
+                        <h1>Selectores en CSS</h1>
+                    </div>
+                    <div>
+                        <p>Indican el elemento al que se debe aplicar el estilo. La declaración indica "qué hay que hacer" y el selector indica "a quién hay que aplicarlo". Hay cuatro selectores básicos:</p>
+                        <ul>Selector universal: Selecciona todos los
+                            elementos de HTML. Se indica con un * (asterisco) y aplica el estilo a todos los elementos contenidos en el
+                            documento HTML.</ul>
+                        <ul>selector de etiqueta o tipo: Se utiliza
+                            para seleccionar una etiqueta específica. Este selector afecta a una etiqueta específica. Esto nos permite ser más precisos a la
+                            hora de aplicar estilos a elementos particulares. Por ejemplo, a todas las etiquetas
+                            h1 o p del documento.</ul>
+                        <ul>selector de clase: Se utiliza agregando
+                            el atributo class a los elementos que
+                            queramos aplicarles estilos. Se aplica con un punto (.) seguido del nombre que le asignemos al selector. Dentro
+                            del documento HTML se lo referencia dentro de la etiqueta usando el atributo class,
+                            con la siguiente estructura: class=“nombredelselector”</ul>
+                        <ul>selector de identificador (id): Similar a
+                            .class pero solo se aplica a una etiqueta
+                            individual. Se coloca con un numeral (#) en CSS y en el documento HTML se hace referencia al selector con id=“nombredelselector”, dentro de la etiqueta a la
+                            cual se aplica:</ul>
+                    </div>
                 </div>
-                <div>
-                    <p>El modelo de caja o “box model” es seguramente la característica más importante del lenguaje de hojas de estilos CSS, ya que condiciona el diseño de todas las páginas web. El Modelo de caja es un mecanismo mediante el cual CSS hace que todos los elementos de las páginas se representan mediante cajas rectangulares. Las cajas de una página se crean automáticamente. Cada vez que se inserta una etiqueta HTML, se crea una nueva caja rectangular que encierra los contenidos de ese elemento. Los navegadores crean y colocan las cajas de forma automática, pero CSS permite modificar todas sus características.</p>
-                    <img src="img/css6.png" alt="modelo de cajas css">
-                    <p>La representación básica del Modelo de caja es la siguiente, donde podemos observar varios conceptos importantes a diferenciar:</p>
-                    <ul>El borde (border). En negro, es el límite que separa el interior del exterior del elemento.</ul>
-                    <ul>El margen (margin). En naranja, es la parte exterior del elemento, por fuera del borde.</ul>
-                    <ul>El relleno (padding). En verde, es la parte interior del elemento, entre el contenido y el borde.</ul>
-                    <ul>El contenido (content). En azul, es la parte interior del elemento, excluyendo el relleno.</ul>
-                    <p>El relleno y el margen son transparentes, por lo que en el espacio ocupado por el relleno se muestra el color o imagen de fondo (si están definidos) y en el espacio ocupado por el margen se muestra el color o imagen de fondo de su elemento padre (si están definidos). Si ningún elemento padre tiene definido un color o imagen de fondo, se muestra el color o imagen de fondo de la propia página (si están definidos).</p>
-                    <img src="img/css7.jpg" alt="relleno y margen css">
+                <div id="especificidad_css" class="secciones">
+                    <div>
+                        <h1>Especificidad</h1>
+                    </div>
+                    <div>
+                        <p>La especificidad es el mecanismo mediante el cual los navegadores deciden qué valores de una propiedad CSS son más relevantes para un elemento. Esto influye en la manera en que los estilos son aplicados. La especificidad está basada en las reglas de coincidencia que están compuestas por diferentes tipos de selectores CSS. La especificidad sólo se aplica cuando el mismo elemento es objetivo de múltiples
+                        declaraciones. Según las reglas de CSS, en caso de que un elemento sea objeto de una declaración directa, está siempre tendrá preferencia sobre las reglas heredadas
+                        de su ancestro.</p>
+                        <div class="div-imagen">
+                            <img src="img/css5.jpg" alt="especificidad css" class="imagen_main1">
+                        </div>
+                        <p>IMPORTANTE: Cuando varias declaraciones tienen igual especificidad, se aplicará al elemento la última declaración encontrada en el CSS.</p>
+                </div>
+                <div id="cajas_css" class="secciones">
+                    <div>
+                        <h1>Modelo de cajas CSS</h1>
+                    </div>
+                    <div>
+                        <p>El modelo de caja o “box model” es seguramente la característica más importante del lenguaje de hojas de estilos CSS, ya que condiciona el diseño de todas las páginas web. El Modelo de caja es un mecanismo mediante el cual CSS hace que todos los elementos de las páginas se representan mediante cajas rectangulares. Las cajas de una página se crean automáticamente. Cada vez que se inserta una etiqueta HTML, se crea una nueva caja rectangular que encierra los contenidos de ese elemento. Los navegadores crean y colocan las cajas de forma automática, pero CSS permite modificar todas sus características.</p>
+                        <div class="div-imagen">
+                            <img src="img/css6.png" alt="modelo de cajas css" class="imagen_main">
+                        </div>
+                        <p>La representación básica del Modelo de caja es la siguiente, donde podemos observar varios conceptos importantes a diferenciar:</p>
+                        <ul>El borde (border). En negro, es el límite que separa el interior del exterior del elemento.</ul>
+                        <ul>El margen (margin). En naranja, es la parte exterior del elemento, por fuera del borde.</ul>
+                        <ul>El relleno (padding). En verde, es la parte interior del elemento, entre el contenido y el borde.</ul>
+                        <ul>El contenido (content). En azul, es la parte interior del elemento, excluyendo el relleno.</ul>
+                        <p>El relleno y el margen son transparentes, por lo que en el espacio ocupado por el relleno se muestra el color o imagen de fondo (si están definidos) y en el espacio ocupado por el margen se muestra el color o imagen de fondo de su elemento padre (si están definidos). Si ningún elemento padre tiene definido un color o imagen de fondo, se muestra el color o imagen de fondo de la propia página (si están definidos).</p>
+                        <div class="div-imagen">
+                            <img src="img/css7.jpg" alt="relleno y margen css" class="imagen_main4">
+                        </div>
+                </div>
             </div>
         </main>
-        <aside>
-            <div class="contenedor_aside">
-                <ul> <a href="#introduccion_css">Introducción</a> </ul>
-                <ul> <a href="#sintaxis_css">Sintaxis</a> </ul>
-                <ul> <a href="#incorporar_css">Incorporar CSS</a> </ul>
-                <ul> <a href="#selectores_css">Selectores </a></ul>
-                <ul> <a href="#especificidad_css">Especificidad CSS</a> </ul>
-                <ul> <a href="#cajas_css">Modelo de cajas CSS</a> </ul>
-            </div>
-        </aside>
-        <footer>
-            <div class="contenedor_footer">
-                <div class="logo"></div>
-                <div >
-                    <div class="footer_img">
-                        <img src="img/icons8-coding-96.png" alt="Codeando" id="logo_footer">
-                    </div>
-                    <p>© 2022 Codeando</p>
-                    <div class="iconos_footer">
-                        <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
+        <footer class="footer">
+            <div class="contenedor-footer">
+                <div class="footer_img">
+                    <img src="img/icons8-coding-96.png" alt="Codeando" id="logo_footer">
+                </div>
+                <p>© 2022 Codeando</p>
+                <div class="iconos_footer">
+                    <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
         </footer>
