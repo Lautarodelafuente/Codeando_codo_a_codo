@@ -236,7 +236,8 @@ a:hover {
         .contenedor_tutorial{
             display: block !important;
             text-align: center;
-            margin: 30px;
+            margin-top: 80px;
+            margin-bottom: 80px;
         }
 
         .contenido_img{
@@ -244,28 +245,39 @@ a:hover {
             justify-content: center;
             align-items: center;
             vertical-align: bottom;
-            margin: 40px 0px 40px 0px;
+            margin: 25px 0px 25px 0px;
         } 
 
         .programando_img{
             height: 12em;
             border-radius: 15px;
+            padding: 0;
+            margin: 0;
             text-align: center;
             /* margin: 10px; */
         }  
 
         .contenido{
-            margin-bottom: 50px;
+            margin: 30px !important;
+            padding: 5px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 1);
+        } 
+
+        .contenedor_tutorial > hr{
+            border-top: double;
+            width: 95%;
         }
 
-        .html{
-            border-bottom: double;
-            border-top: double;
-        }
+        .contenido:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 1);
+        }        
 
-        .js{
-            border-bottom: double;
-            border-top: double;
+        .iconos_inicio{
+            color: #3E80E9 ;
+            display: flex;
+            justify-content: center;
+        
         }
 
         .fa-html5, .fa-css3-alt, .fa-square-js, .fa-python{
@@ -341,7 +353,7 @@ a:hover {
         }
 
         #menu-responsive:hover {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 900;
             transition: all 1000ms ease;
         }
@@ -400,6 +412,7 @@ a:hover {
           .dropdown-content-responsive a:hover {
             background-color: #ddd;
             color: black;
+            transform: scale(1.1);
           }
 
           .dropdown-responsive:hover .dropdown-content-responsive {
@@ -422,13 +435,7 @@ a:hover {
           }
 
 
-
-        .fa-html5, .fa-css3-alt, .fa-square-js, .fa-python{
-            align-items: center;
-            display: flex;
-            font-size: 3em !important;
-            padding: 0 1em !important;
-        }
+        
 
     /* MAIN */
     main{
@@ -439,38 +446,75 @@ a:hover {
 
         .contenedor_tutorial{
             display: grid;
-            grid-column: 50% 50%; 
+            grid-column: 1fr 1fr; 
             text-align: center;
-            padding: 0%;
-            margin: 0%;
+            padding: 0;
+            margin: 50px 0 30px 0;
+            /* border: solid white 1px ; */
+        }
+
+        .contenido{
+            padding: 2em;
+        } 
+
+        .contenedor_tutorial hr{
+            display: none;
         }
 
         .html{
             grid-column: 1/1;
             grid-row: 1/1;
             align-items: center;
+            margin: 0.8em;
             /* border: solid white 1px ; */
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
+        }
+
+        .html:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 1);
         }
 
         .css{
             grid-column: 2/2;
             grid-row: 1/1;
             align-items: center;
+            margin: 0.8em;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);           
             /* border: solid white 1px ; */
+        }
+
+        .css:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 1);
         }
 
         .js{
             grid-column: 1/1;
             grid-row: 2/2;
             align-items: center;
+            margin: 0.8em;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
             /* border: solid white 1px ; */
+        }
+
+        .js:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 1);
         }
 
         .python{
             grid-column: 2/2;
             grid-row: 2/2;
             align-items: center;
+            margin: 0.8em;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
             /* border: solid white 1px ; */
+        }
+
+        .python:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 1);
         }
 
         .programando_img{
@@ -486,9 +530,19 @@ a:hover {
             vertical-align: bottom;
         }  
 
-        .contenido{
-            margin: 0.5em;
-            padding: 2em;
+        
+        .iconos_inicio{
+            color: #3E80E9 ;
+            display: flex;
+            justify-content: center;
+        
+        }
+
+        .fa-html5, .fa-css3-alt, .fa-square-js, .fa-python{
+            align-items: center;
+            display: flex;
+            font-size: 3em !important;
+            padding: 0 1em !important;
         }
     
     /* FOOTER */
@@ -510,80 +564,101 @@ a:hover {
     margin: 30px 5% 5% 5%;
 }
 
-.formulario{
-    margin: auto;
-    width: 100%;
-}
+    .formulario{
+        margin: auto;
+        width: 100%;
+    }
 
-.grupo{
-    position: relative;
-    margin: 1.8em;
-}
+    .grupo{
+        position: relative;
+        margin: 1.8em;
+    }
 
-input, textarea{
-    border-radius: 15px;
-    border-color: #6a6a6a;
-    border-style:ridge;
-    padding: 1em 1em 1em 0.5em;
-    display: block;
-    width: 100%;
-    font-weight: 800;
-    font-size: 14px;
-    font-style: italic;
-}
+    input, textarea{
+        border-radius: 15px;
+        border-color: #6a6a6a;
+        border-style:ridge;
+        padding: 1em 1em 1em 0.5em;
+        display: block;
+        width: 100%;
+        font-weight: 800;
+        font-size: 14px;
+        font-style: italic;
+    }
 
-#btnEnviar{
-    background-color: white;
-    color: black;
-    border-radius: 12px;
-    border-color: white;
-    padding: 1em 1.5em;
-}
+    #btnEnviar{
+        background-color: white;
+        color: black;
+        border-radius: 12px;
+        border-color: white;
+        padding: 1em 1.5em;
+    }
 
-#btnEnviar:hover{
-    background-color: #3172a3;
-    color: white;
-    border-radius: 12px;
-    border-color: #5aaae7;
-}
+    #btnEnviar:hover{
+        background-color: #3172a3;
+        color: white;
+        border-radius: 12px;
+        border-color: #5aaae7;
+    }
 
-.div_btn{
-    margin-left: 2em;
-}
+    .div_btn{
+        margin-left: 2em;
+    }
+
 
 /*FOOTER*/
+
 .footer{
     background: rgb(49,114,163);
     background: radial-gradient(circle, rgba(49,114,163,1) 0%, rgba(0,0,0,1) 100%);
-    padding: 0.5em 0px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    text-align: center;
+    padding: 15px 0px;
+    /* position: absolute; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px 20px 50px;
+    overflow: hidden;
+    height: 90px;
+    border-top: black 3px solid;
+    /* border: white 1px solid; */
 }
 
 footer #logo_footer{
-    width: 10%;
-    padding: 0.5em;
+    width:80px;
+    padding: 10px 20px 10px;
+
+
 }
 
 footer p{
-    display: flex;
-    height: 2px;
+    display: block;
+    width: fit-content;
     justify-content: center;
     align-items: center;
+    font-size: 18px;
+    /* border: white 1px solid; */
 }
 
 .iconos_footer{
     display: flex;
-    justify-content: center;
-    padding: 0.5em 1.6em;
+    justify-content: right;
+    padding: 0;
     color: white;
+    /* border: white 1px solid; */
 }
 
 .iconos_footer a{
-    padding: 0 1em;
+    padding: 10px 20px 0px 0px;
     color: white;
+    font-size: 25px;
+    /* border: white 1px solid; */
+}
+
+.iconos_footer a:hover {
+    background-color: inherit;
+    /* color: white; */
+    transform: scale(1.4);
 }
 
 .footer_img{
@@ -621,16 +696,6 @@ footer p{
     border-color: #5aaae7;
 }
 
-.iconos_inicio{
-    color: #3E80E9 ;
-    display: flex;
-    justify-content: center;
 
-}
-
-/* .fa-html5, .fa-css3-alt, .fa-square-js {
-    font-size: 2.5em;
-    padding: 0 1.6em;
-} */
 
 
