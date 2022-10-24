@@ -18,6 +18,7 @@
     
     <!--MENU-->
     <script src="menu.js"></script>
+    
 </head>
 <body>
     <div >
@@ -35,20 +36,61 @@
             <div class="topnav">
                 <div id="myLinks">
                 <!-- Links de navegacion -->
-                <a href="index.html">Inicio</a>
-                <a href="#">Tutoriales</a>
-                <a href="contacto.html">Contacto</a>
-                <a href="acerca.html">Acerca de</a>
+                    <div id="menu"><a href="index.html">Inicio</a></div>
+                    
+                    
+                    
+                    <div id="menu"><a href="contacto.html">Contacto</a></div>
+                    
+                    <div id="menu"><a href="acerca.html">Acerca de</a></div>
+
+                    <div  class="dropdown">
+                        
+                        <button id="menu" class="dropbtn" onclick="openMenu()">
+                            <i class="fa fa-caret-down"></i> Tutoriales  
+                        </button> 
+                        
+                        <div class="dropdown-content">
+                            <a href="html.html">HTML</a>
+                            <a href="css.html">CSS</a>
+                            <a href="javascript.html">javaScript</a>
+                            <a href="python.html">Python</a>
+                        </div>
+                    </div> 
+
                 </div>
             </div>
 
             <div class="topnavResponsive">
                 <!-- Links de navegacion -->
                 <div id="myLinksResponsive">
+<<<<<<< HEAD
                     <a href="index.html">Inicio</a>
                     <a href="#">Tutoriales</a>
                     <a href="contacto.html">Contacto</a>
                     <a href="acerca.html">Acerca de</a> 
+=======
+                    
+                    <a id="menu-responsive" href="index.html">Inicio</a>
+                    <!-- <a  href="#">Tutoriales</a> -->
+                    
+                    <div class="dropdown-responsive">
+                        <button id="menu-responsive" class="dropbtn-responsive">Tutoriales 
+                        <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content-responsive">
+                            <a href="html.html">HTML</a>
+                            <a href="css.html">CSS</a>
+                            <a href="javascript.html">javaScript</a>
+                            <a href="python.html">Python</a>
+                        </div>
+                    </div> 
+                    
+                    <a id="menu-responsive" href="contacto.html">Contacto</a>
+                    
+                    <a id="menu-responsive" href="acerca.html">Acerca de</a>
+                
+>>>>>>> b889f2f2042edaa50d2d512ef1b11f62066246c6
                 </div>
             </div>
         </header> 
