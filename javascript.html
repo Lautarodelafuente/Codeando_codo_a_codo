@@ -18,37 +18,60 @@
 </head>
 
 <body>
-    <div>
-        <header class="grid header">
+    <div class="contenedor">
+        <header class="header">
             <a href="" class="logo">
                 <img src="img/icons8-coding-96.png" alt="Codeando">
                 <h2 class="Nombre-pagina">Codeando...</h2>
             </a>
             
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <!-- Boton de menu -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars"></i>  
             </a>
         
-        <div class="topnav">
-            <div id="myLinks">
-              <a href="index2.html">Inicio</a>
-              <a href="#">Tutoriales</a>
-              <a href="contacto.html">Contacto</a>
-              <a href="acerca.html">Acerca de</a>
+            <div class="topnav">
+                <div id="myLinks">
+                <!-- Links de navegacion -->
+                <a href="index.html">Inicio</a>
+                <a href="#">Tutoriales</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="acerca.html">Acerca de</a>
+                </div>
             </div>
-        </div>
-        </header> 
-        <main>
-            <div id="introduccion_JS">
+
+            <div class="topnavResponsive">
+                <!-- Links de navegacion -->
+                <div id="myLinksResponsive">
+                    <a href="index.html">Inicio</a>
+                    <a href="#">Tutoriales</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="acerca.html">Acerca de</a> 
+                </div>
+            </div>
+
+        </header>
+
+        <aside class="aside">
+            <ul> <a href="#introduccion_js">Introducción</a> </ul>
+            <ul> <a href="#etiqueta_js">Etiqueda script</a> </ul>
+            <ul> <a href="#variables_js">Variales Js</a> </ul>
+            <ul> <a href="#datos_js">Tipos de datos </a></ul>
+            <ul> <a href="#operadores_css">Operadores aritmeticos</a> </ul>
+            <ul> <a href="#cajas_css">Modelo de cajas CSS</a> </ul>
+        </aside>
+
+        <main class="main">
+            <div id="introduccion_js" class="secciones">
                 <div>
-                    <h1>¿Que es HTML?</h1>
+                    <h1>¿Que es JavaScript?</h1>
                 </div>
                 <div>
                     <p>JavaScript es un lenguaje de programación que te permite implementar cosas complejas en páginas web. Cada vez que una página web hace algo más que sentarse ahí y mostrar información estática para que la veas, mostrando actualizaciones de contenido oportunas, mapas interactivos, gráficos animados 2D/3D, desplazando máquinas reproductoras de video, o más, puedes apostar que probablemente JavaScript esté involucrado.</p>
                     <p>Es un mecanismo con el que podemos indicarle al navegador qué tareas debe realizar, en qué orden y cuántas veces, entre otras. Con JS agregamos comportamiento a nuestro sitio, permitiendo al usuario interactuar con él, rompiendo con la idea de una web estática. Junto con HTML y CSS es la tercera pieza fundamental del desarrollo web.</p>
                 </div>
             </div>
-            <div id="etiqueta_js">
+            <div id="etiqueta_js" class="secciones">
                 <div>
                     <h1>La ubicación de la etiqueta "script"</h1>
                 </div>
@@ -58,10 +81,12 @@
                     <ul>En body: cuando la página se haya dibujado hasta el script.</ul>
                     <ul>Antes de body: cuando la página se haya dibujado en su totalidad.</ul>
                     <ul>Archivo externo: Podemos vincular al documento HTML un archivo con extensión .js usando la etiqueta script, haciendo referencia al nombre del archivo JavaScript con el atributo src (source).</ul>
-                    <img src="img/js1.jpg" alt="archivo externo">
+                    <div class="div-imagen">
+                        <img src="img/js1.jpg" alt="archivo externo" class="imagen_main">
+                    </div>
                 </div>
             </div>
-            <div id="variables_js">
+            <div id="variables_js" class="secciones">
                 <div>
                     <h1>¿Qué son las variables en JS?</h1>
                 </div>
@@ -73,34 +98,44 @@
                     <p>Se llaman variables porque pueden cambiar su valor a lo largo del programa. Un programa puede tener muchas variables, y cada una de ellas tendrá un nombre que la identifique, un valor y un tipo de dato.</p>
                     <h3>¿Cómo se declaran?</h3>
                     <p>Una variable que se ha declarado con var pero a la que no se le asignó un valor se dice que está indefinida (no conocemos el tipo de dato):</p>
-                    <img src="img/js2.jpg" alt="variable">
+                    <div class="div-imagen">
+                        <img src="img/js2.jpg" alt="variable" class="imagen_main3">
+                    </div>
                     <p>En este caso la variable está “vacía”, no está definido el valor que colocará en memoria. No se ha asociado ningún contenido a esa variable.</p>
-                    <img src="img/js3.jpg" alt="variable">
+                    <div class="div-imagen">
+                        <img src="img/js3.jpg" alt="variable" class="imagen_main4">
+                    </div>
                     <p>Las sentencias en JS finalizan con “;”. La imagen anterior corresponde a la declaración de la variable “num4” con un valor numérico entero de “5”.</p>
                     <h3>¿Cómo se nombran?</h3>
                     <p>Los nombres de las variables (o identificadores) permiten distinguir una de otras. Para asignar los nombres de las variables debemos seguir ciertas reglas:</p>
                     <ul>Un identificador de JavaScript debe comenzar con una letra, un guión bajo ( _ ) o un signo de dólar ( $ ). Los siguientes caracteres también pueden ser dígitos ( 0 - 9 ). JavaScript distingue entre mayúsculas y minúsculas (es case-sensitive).</ul>
                     <ul>Se recomienda usar la escritura camelCase en el nombre de variables que tienen más de una palabra.</ul>
                 </div>
-                <div id="datos_js">
+                <div id="datos_js" class="secciones">
                     <div>
                         <h1>Tipos de datos en JavaScript</h1>
                     </div>
                     <div>
                         <p>Las variables de JavaScript pueden contener distintos tipos de datos: numérico, cadena de caracteres, lógicos, indefinido, null, objetos y más. El tipo de dato es la naturaleza del contenido de la variable o constante.JavaScript tiene tipado dinámico, es decir que la misma variable se puede utilizar para contener diferentes tipos de datos:</p>
-                        <img src="img/js4.png" alt="">
+                        <div class="div-imagen">
+                            <img src="img/js4.png" alt="" class="imagen_main2">
+                        </div>
                         <p>JavaScript deduce cuál es el tipo de dato de la variable. El tipo de dato asociado a esa variable lo determina el dato que se almacena en ella. Y si luego se le asigna un valor de otro tipo, el tipo de la variable cambia.</p>
                         <h3>Tipos de datos</h3>
-                        <img src="img/js5.jpg" alt="">
+                        <div class="div-imagen">
+                            <img src="img/js5.jpg" alt="" class="imagen_main2">
+                        </div>
                     </div>
-                    <div id="operadores_js">
+                    <div id="operadores_js" class="secciones">
                         <div>
                             <h1>Operadores aritméticos y de asignación</h1>
                         </div>
                         <div>
                             <p>El operador de asignación (=) le otorga un valor a una variable y se coloca entre la variable y el valor a asignar.</p>
                             <p>Los operadores aritméticos se utilizan para realizar operaciones aritméticas en números:</p>
-                            <img src="img/js6.jpg" alt="operadores aritmeticos">
+                            <div class="div-imagen">
+                                <img src="img/js6.jpg" alt="operadores aritmeticos" class="imagen_main">
+                            </div>
                             <p>Los operadores + y += también se pueden utilizar para agregar (concatenar) cadenas. En este contexto, el operador + se denomina operador de concatenación.</p>
                         </div>
                         <div>
@@ -108,33 +143,43 @@
                         </div>
                         <div>
                             <p>Un operador de comparación (o relacional) compara sus operandos y devuelve un valor lógico en función de si la comparación es verdadera (true) o falsa(false). Los operandos pueden ser valores numéricos, de cadena, lógicos u objetos. Las cadenas se comparan según el orden lexicográfico estándar. En la mayoría de los casos, si los dos operadores no son del mismo tipo, JavaScript intenta convertirlos a un tipo apropiado para la comparación. Este comportamiento generalmente resulta en comparar los operadores numéricamente.</p>
-                            <img src="img/js7.jpg" alt="operadores de comparacion">
+                            <div class="div-imagen">
+                                <img src="img/js7.jpg" alt="operadores de comparacion" class="imagen_main4">
+                            </div>
                         </div>
                         <div>
                             <h1>Operadores prefijo y posfijo</h1>
                         </div>
                         <div>
                             <p>Los afijos se anteponen o se posponen en un nombre de una variable. Cuando hablamos de prefijo nos referimos a que se antepone a la variable y el posfijo se pospone. Se utilizan para realizar operaciones aritméticas, tanto para incrementar como para decrementar el valor de una variable.</p>
-                            <img src="img/js9.jpg" alt="operadores prefijo y posfijo">
+                            <div class="div-imagen">
+                                <img src="img/js9.jpg" alt="operadores prefijo y posfijo" class="imagen_main1">
+                            </div>
                         </div>
                         <div>
                             <h1>Operadores logicos</h1>
                         </div>
                         <div>
                             <p>Los operadores lógicos se utilizan normalmente con valores booleanos (lógicos).</p>
-                            <img src="img/js8.jpg" alt="operadores logicos">
+                            <div class="div-imagen">
+                                <img src="img/js8.jpg" alt="operadores logicos" class="imagen_main1">
+                            </div>
                         </div>
             </div>
         </main>
-        <aside>
-            <div class="contenedor_aside">
-                <ul> <a href="#introduccion_js">Introducción</a> </ul>
-                <ul> <a href="#etiqueta_js">Etiqueda script</a> </ul>
-                <ul> <a href="#variables_js">Variales Js</a> </ul>
-                <ul> <a href="#datos_js">Tipos de datos </a></ul>
-                <ul> <a href="#operadores_css">Operadores aritmeticos</a> </ul>
-                <ul> <a href="#cajas_css">Modelo de cajas CSS</a> </ul>
+
+        <footer class="footer">
+            <div class="contenedor-footer">
+                <div class="footer_img">
+                    <img src="img/icons8-coding-96.png" alt="Codeando" id="logo_footer">
+                </div>
+                <p>© 2022 Codeando</p>
+                <div class="iconos_footer">
+                    <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
             </div>
-        </aside>
+        </footer>
     </div>
 </body>
