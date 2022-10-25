@@ -239,9 +239,9 @@ a:hover {
     }
 
     /*Posicion del footer*/
-    .contenedor .footer{
-        grid-column: 1/-1;
-        grid-row: 3/-1;
+    footer {
+        grid-column: span 4;
+        grid-row: auto;
     }
     
     /*Contenido dentro de los contenedores*/
@@ -277,30 +277,65 @@ a:hover {
     .footer{
         background: rgb(49,114,163);
         background: radial-gradient(circle, rgba(49,114,163,1) 0%, rgba(0,0,0,1) 100%);
+        padding: 15px 0px;
+        /* position: absolute; */
         display: flex;
-        justify-content: center;
-        padding: 2%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 50px 20px 50px;
+        /* overflow: hidden; */
+        height: 90px;
+        border-top: black 3px solid;
+        /* border: white 1px solid; */
     }
-
+    
     footer #logo_footer{
-        width: 17%;
-        padding: 0.5em;
+        width:80px;
+        padding: 10px 20px 10px;
     }
-
-    .footer_img, .iconos_footer, .contenedor-footer p{
+    
+    footer p{
+        display: block;
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        /* border: white 1px solid; */
+    }
+    
+    .iconos_footer{
+        display: flex;
+        justify-content: right;
+        padding: 0;
+        color: white;
+        /* border: white 1px solid; */
+    }
+    
+    .iconos_footer a{
+        padding: 10px 20px 0px 0px;
+        color: white;
+        font-size: 25px;
+        /* border: white 1px solid; */
+    }
+    
+    .iconos_footer a:hover {
+        background-color: inherit;
+        /* color: white; */
+        transform: scale(1.4);
+    }
+    
+    .footer_img{
         display: flex;
         justify-content: center;
+        align-content: center;
+        text-align: center;
     }
-
-    .iconos_footer{
-        padding: 0.5em 1.6em;
-        color: white;
-    }
-
-    .iconos_footer a{
-        padding: 0 1em;
-        color: white;
-    }
+    
+    .footer_img a:hover {
+        background-color: inherit;
+        transform: scale(1.1);
+    }    
     /*Fin del estilo del footer*/
 
     #editor_html ul{
@@ -488,11 +523,12 @@ a:hover {
         background: radial-gradient(circle, rgba(49,114,163,1) 0%, rgba(0,0,0,1) 100%);
         display: flex;
         justify-content: center;
+        align-items: center;
         padding: 2%;
     }
 
     footer #logo_footer{
-        width: 17%;
+        width: 45%;
         padding: 0.5em;
     }
 
@@ -748,15 +784,20 @@ a:hover {
         background: radial-gradient(circle, rgba(49,114,163,1) 0%, rgba(0,0,0,1) 100%);
         display: flex;
         justify-content: center;
+        align-items: center;
         padding: 2%;
     }
 
     footer #logo_footer{
-        width: 17%;
+        width: 45%;
         padding: 0.5em;
     }
 
-    .footer_img, .iconos_footer, .contenedor-footer p{
+    .footer p{
+        text-align: center;
+    }
+
+    .footer_img, .iconos_footer/*.contenedor-footer p*/{
         display: flex;
         justify-content: center;
     }
