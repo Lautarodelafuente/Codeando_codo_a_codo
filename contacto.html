@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-index.css">
     <title>formulario</title>
     
+    <link rel="stylesheet" href="contacto.css">
+
     <!-- FONT-AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
@@ -81,24 +82,34 @@
                 </div>
             </div>
         </header> 
-        <main>
-            <form action="" method="post" id="formulario">
+        <main id="main_index">
+            <form action="https://formspree.io/f/xjvzagve" method="POST" id="formulario">
                 <div class="formulario">
+                    
                     <h1 class="titulo_form">Envianos un mensaje</h1>
+                    
                     <div class="grupo">
-                        <input  type="text" name="name" placeholder="Nombre" required>
+                        <input  type="text" name="name" placeholder="Nombre" autocapitalize="characters" required>
                     </div>
+                   
+                    <div class="grupo">
+                        <input  type="text" name="apellido" placeholder="Apellido" required>
+                    </div>
+                   
                     <div class="grupo">
                         <input type="email" name="mail" placeholder="Email" required>
                     </div> 
+                   
                     <div class="grupo">
-                        <input type="text" name="number" placeholder="Telefono" required>
+                        <input type="tel" maxlength="15" name="number" placeholder="Telefono" required>
                     </div>
+                   
                     <div class="grupo">
                         <textarea name="mensaje" rows="10" cols="30" placeholder="Escriba su mensaje" required></textarea>
                     </div>
+                   
                     <div class="div_btn">
-                        <button type="submit" id="btnEnviar" name="btnEnviar" class="btnEnviar">ENVIAR</button>
+                        <button type="submit" id="btnEnviar" name="btnEnviar" class="btnEnviar" maxlength="600">ENVIAR</button>
                     </div>
                 </div>
             </form>
@@ -123,4 +134,27 @@
 
         </footer>
     </div>
+
+    <script>
+        const $form = document.querySelector('#formulario')
+
+        $form.addEventListener('submit', handlsubmit)
+
+        async function handlsubmit(event){
+            event.preventDefault()
+            const form = new FormData(this)
+            const response = await fetch(this.action, {
+                method: this.method,
+                body: form,
+                headers: {
+                    'accept': 'application/json'
+                }
+            })
+            if(response.ok){
+                this.reset()
+                alert('¡Gracias por contactarnos! En breves te enviaremos una respuesta.')
+            }
+        }
+
+    </script>
 </body>

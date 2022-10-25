@@ -77,37 +77,6 @@ a:hover {
         grid-template-rows: repeat(3, auto);
     }
 
-    /*ajuster del header*/
-    .header {
-        display: flex; 
-        grid-column: 1/1;
-        grid-row: 1/1;
-        border: 0px;
-        background-color: #03192E;
-        color: #FF9B98;
-        justify-content: space-between;
-        padding: 0px !important;
-        margin: 0px !important;
-    }
-
-    .icon{
-        display: none;
-    }
-
-    .topnav{
-        display: none;
-    }
-
-    .topnavResponsive{
-        display: flex;
-        align-items: center;
-        margin-right: 15px;
-        margin-left: 15px;
-    }
-
-    .topnavResponsive a{
-        padding: 6px;
-    }
 
     .contenedor .main, .contenedor .footer, 
     .contenedor .aside, .contenedor .header{
@@ -115,10 +84,142 @@ a:hover {
     }
 
     /*Posiciono el header*/
-    .contenedor .header{
+    /* .contenedor .header{
         grid-column: 1/ -1;
         grid-row: 1/2;
+    } */
+
+    /* HEADER */
+    .header {
+        display: flex; 
+        grid-column: 1/ -1;
+        grid-row: 1/2;
+        border: 0px;
+        background-color: #03192E;
+        color: #FF9B98;
+        justify-content: space-between;
+        padding: 0px;
+        margin: 0px;
+        align-items: center;
     }
+
+        .icon{
+            display: none;
+        }
+
+        .topnav{
+            display: none;
+        }
+
+        .topnavResponsive{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            padding-right: 30px;
+            /* border: white 2px solid; */
+        }
+
+        #myLinksResponsive{
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            word-wrap: initial;
+        }
+
+        #menu-responsive{
+            padding: 15px 5px 15px 5px;
+            margin: 0;
+            /* border: white 2px solid; */
+            overflow: auto;
+            font-size: 17px;  
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        #menu-responsive:hover {
+            font-size: 18px;
+            font-weight: 900;
+            transition: all 1000ms ease;
+        }
+
+        .dropdown-responsive {
+            /* border: white 2px solid; */
+            display: contents;
+            overflow: hidden;
+          }
+
+        .dropdown-responsive:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .dropdown-responsive .dropbtn-responsive {
+            border: none;
+            outline: none;
+            color: white;
+            padding: 15px 5px 15px 5px;
+            margin: 0;
+            background-color: inherit;
+          }
+
+          .dropbtn-responsive:hover {
+            background-color: #ddd;
+            color: black;
+            }
+        
+
+          .dropdown-content-responsive {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 95px;
+            right: 238px;
+            color: white;
+            background-color: #466d8e;
+            min-width: 140px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,5);
+            z-index: 10;
+            visibility: hidden;
+            opacity: 0;
+            transition: all 500ms ease;
+          }
+
+          .dropdown-content-responsive a {
+            float: none;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+          }  
+
+          .dropdown-content-responsive a:hover {
+            background-color: #ddd;
+            color: black;
+            transform: scale(1.1);
+          }
+
+          .dropdown-responsive:hover .dropdown-content-responsive {
+            visibility: visible;
+            opacity: 1;
+            top: 85px;
+            background-color: #466d8e;
+          }
+
+          .dropdown-content-responsive::before{
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            border-bottom: 12px solid #466d8e;
+            position: absolute;
+            top: -12px;
+            left: 20px;
+          }
+
+
 
     /*Posiciono el main*/
     .contenedor .main{
@@ -221,11 +322,142 @@ a:hover {
         grid-template-rows: repeat(4, auto);
     }
 
-    /*Posiciono el header*/
+    /* Posiciono el header
     .contenedor .header{
         grid-column: 1/-1;
         grid-row: 1/2;
+    } */
+
+    /* HEADER */
+    .header {
+        display: flex; 
+        grid-column: 1/-1;
+        grid-row: 1/2;
+        border: 0px;
+        background-color: #03192E;
+        color: #FF9B98;
+        justify-content: space-between;
+        padding: 0px;
+        margin: 0px;
+        align-items: center;
     }
+
+        .icon{
+            display: none;
+        }
+
+        .topnav{
+            display: none;
+        }
+
+        .topnavResponsive{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            padding-right: 30px;
+            /* border: white 2px solid; */
+        }
+
+        #myLinksResponsive{
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            word-wrap: initial;
+        }
+
+        #menu-responsive{
+            padding: 15px 5px 15px 5px;
+            margin: 0;
+            /* border: white 2px solid; */
+            overflow: auto;
+            font-size: 17px;  
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        #menu-responsive:hover {
+            font-size: 18px;
+            font-weight: 900;
+            transition: all 1000ms ease;
+        }
+
+        .dropdown-responsive {
+            /* border: white 2px solid; */
+            display: contents;
+            overflow: hidden;
+          }
+
+        .dropdown-responsive:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .dropdown-responsive .dropbtn-responsive {
+            border: none;
+            outline: none;
+            color: white;
+            padding: 15px 5px 15px 5px;
+            margin: 0;
+            background-color: inherit;
+          }
+
+          .dropbtn-responsive:hover {
+            background-color: #ddd;
+            color: black;
+            }
+        
+
+          .dropdown-content-responsive {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 95px;
+            right: 238px;
+            color: white;
+            background-color: #466d8e;
+            min-width: 140px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,5);
+            z-index: 10;
+            visibility: hidden;
+            opacity: 0;
+            transition: all 500ms ease;
+          }
+
+          .dropdown-content-responsive a {
+            float: none;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+          }  
+
+          .dropdown-content-responsive a:hover {
+            background-color: #ddd;
+            color: black;
+            transform: scale(1.1);
+          }
+
+          .dropdown-responsive:hover .dropdown-content-responsive {
+            visibility: visible;
+            opacity: 1;
+            top: 85px;
+            background-color: #466d8e;
+          }
+
+          .dropdown-content-responsive::before{
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            border-bottom: 12px solid #466d8e;
+            position: absolute;
+            top: -12px;
+            left: 20px;
+          }
+
 
     /*Posiciono el main*/
     .contenedor .main{
@@ -360,7 +592,7 @@ a:hover {
     }
 
      /* HEADER */
-     .header {
+    .header {
         grid-column: 1/1;
         grid-row: 1/1;
         padding: 0px;
@@ -369,53 +601,141 @@ a:hover {
         background-color: #03192E;
     }
 
-    .topnavResponsive #myLinksResponsive{
-        display: none;
-    }
 
-        /* Hide the links inside the navigation menu (except for logo/home) */
-    .topnav #myLinks {
-        display: none;
-    }
+        /* MENU RESPONSIVE - MENU HAMBURGUESA */
+        .topnavResponsive #myLinksResponsive{
+            display: none;
+        }
+
+        .topnav #myLinks {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            border-top: black 3px solid;
+        }
         
-    /* Style navigation menu links */
-    .topnav a {
-        color: white;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        display: block;
-        position: relative;
-        text-align: right;
-        padding-right: 30px;
-    }
-    
-    /* Style the hamburger menu */
-    .icon {
-        /* background: rgb(37, 43, 68); */
-        color: white;
-        padding: 10px 12px;
-        text-decoration: none;
-        font-size: 25px;
-        margin-right: 5x; 
-        position: absolute;
-        display: block;
-        right: 30px;
-        top: 0px;
-        margin-top: 22.5px;
-    }
-    
-    /* Add a grey background color on mouse-over */
-    a:hover {
-        background-color: #ddd;
-        color: black;
-    }
-    
-    /* Style the active link (or home/logo) */
-    .active {
-        background-color: #04AA6D;
-        color: white;
-    }
+        .topnav #menu{
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            text-align: right;
+            transition: all 500ms ease;
+
+        }
+
+        :not(.dropdown) #menu:hover {
+            font-size: 21px;
+            font-weight: 900;
+            color: black;
+            
+
+            /* text-decoration: underline; */
+        }
+
+        #menu>a{
+            margin: 0;
+            display: block;
+            padding: 14px 30px 16px 10px;
+        }
+
+        .dropdown:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .dropdown:hover a{
+            font-size: 17px;
+            text-decoration: none;
+        }
+
+        .dropbtn{
+            width: 100%;
+            text-align: right;
+        }
+
+        /* MENU DESPLEGABLE {TUTORIALES} */
+        .dropdown .dropbtn {
+            font-size: 18px;  
+            font-family: 'Courier New', Courier, monospace;
+            border: none;
+            outline: none;
+            color: white;
+            margin: 0;
+            padding: 14px 30px 16px 10px;
+            background-color: inherit;
+            text-decoration: none;
+          }
+
+          .dropbtn:hover {
+            background-color: #ddd;
+            color: black;
+            font-size: 21px;
+            font-weight: 900;
+            /* text-decoration: underline; */
+            }
+
+          .dropdown-content {
+            display: none;
+            position: flex;
+            text-align: right;
+            text-decoration: none;
+            background-color: #466d8e;
+            color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,5);
+            z-index: 1;
+          }
+
+          .dropdown-content a {
+            float: none;
+            color: white;
+            padding: 12px 60px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: right;
+            font-size: 17px;
+            font-weight: inherit; 
+          }  
+
+          .dropdown-content a:hover {
+            color: black;            
+            text-decoration: none;
+            font-size: 21px;
+            font-weight: 900; 
+          }
+
+          .dropdown:hover .dropdown-content {
+            display: flex;
+            flex-direction: column;
+            transition: all 1000ms ease;
+          }
+        
+        /* Style the hamburger menu */
+        .icon {
+            /* background: rgb(37, 43, 68); */
+            color: white;
+            padding: 10px 12px;
+            text-decoration: none;
+            font-size: 25px;
+            margin-right: 5x; 
+            position: absolute;
+            display: block;
+            right: 30px;
+            top: 0px;
+            margin-top: 22.5px;
+        }
+        
+        /* Add a grey background color on mouse-over */
+        a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        /* Style the active link (or home/logo) */
+        .active {
+            background-color: #04AA6D;
+            color: white;
+        }
 
     /*Aside*/
     .aside{

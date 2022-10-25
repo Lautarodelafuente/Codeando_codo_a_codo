@@ -236,62 +236,68 @@ a:hover {
         background: radial-gradient(circle, rgba(49,114,163,1) 0%, rgba(0,0,0,1) 100%);
     } 
 
-        .contenedor_tutorial{
-            display: block !important;
-            text-align: center;
-            margin-top: 80px;
-            margin-bottom: 80px;
+    #formulario {
+        background: rgb(49,114,163);
+        background: radial-gradient(circle, rgba(49,114,163,1) 0%, rgba(0,0,0,1) 100%);
+        /* padding:  20px 20px 20px 0px; */
+        display: block;
+        /* box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8); */
+        /* border-radius: 10px; */
+        /* margin: 30px 5% 5% 5%; */
+    }
+    
+        .formulario{
+            margin: auto;
+            /* width: 100%; */
+            /* height: 100%; */
+            padding: 15% 10% 15% 10%;
         }
-
-        .contenido_img{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            vertical-align: bottom;
-            margin: 25px 0px 25px 0px;
-        } 
-
-        .programando_img{
-            height: 12em;
-            border-radius: 15px;
-            padding: 0;
-            margin: 0;
-            text-align: center;
-            /* margin: 10px; */
-        }  
-
-        .contenido{
-            margin: 30px !important;
-            padding: 5px 30px 5px 30px;
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 1);
-        } 
-
-        .contenido p {
-            text-align: center; 
-        }
-
-        .contenedor_tutorial > hr{
-            border-top: double;
-            width: 95%;
-        }
-
-        .contenido:hover {
-            transform: scale(1.02);
-            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 1);
-        }        
-
-        .iconos_inicio{
-            color: #3E80E9 ;
-            display: flex;
-            justify-content: center;
         
+        .titulo_form{
+            padding-bottom: 40px;
         }
 
-        .fa-html5, .fa-css3-alt, .fa-square-js, .fa-python{
-            align-items: center;
-            display: flex;
-            font-size: 3em !important;
-            padding: 0 0.5em !important;
+        .grupo{
+            overflow: hidden;
+            width: 100%;
+            justify-content: center;
+            margin: 15px 0 15px;
+            border-radius: 15px;
+            box-shadow: 0px 8px 10px 0px rgba(0,0,0,1);
+        }
+    
+        input, textarea{
+            border-radius: 15px;
+            border-color: #6a6a6a;
+            border-style:ridge;
+            padding: 1em 1em 1em 0.5em;
+            display: block;
+            width: 100%;
+            font-weight: 800;
+            font-size: 14px;
+            font-style: italic;
+        }
+    
+        #btnEnviar{
+            background-color: white;
+            color: black;
+            border-radius: 12px;
+            border-color: white;
+            padding: 1em 1.5em;
+            border-radius: 15px;
+            box-shadow: 0px 8px 10px 0px rgba(0,0,0,1);
+        }
+    
+        #btnEnviar:hover{
+            background-color: #3172a3;
+            color: white;
+            border-radius: 12px;
+            border-color: #5aaae7;
+            transform: scale(1.1);
+        }
+    
+        .div_btn{
+            text-align: center;
         }
     
     /* FOOTEr */
@@ -442,8 +448,6 @@ a:hover {
           }
 
 
-        
-
     /* MAIN */
     main{
         grid-column: 1/1;
@@ -453,109 +457,70 @@ a:hover {
         background: radial-gradient(circle, rgba(49,114,163,1) 0%, rgba(0,0,0,1) 100%);
     }
 
-        .contenedor_tutorial{
-            display: grid;
-            grid-column: 1fr 1fr; 
-            text-align: center;
-            padding: 0;
-            margin: 50px 0 30px 0;
-            /* border: solid white 1px ; */
+    #formulario {
+        background: rgb(49,114,163);
+        background: radial-gradient(circle, rgba(49,114,163,1) 0%, rgba(0,0,0,1) 100%);
+        padding:  20px 20px 20px 20px;
+        display: block;
+        /* box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8); */
+        /* border-radius: 10px; */
+        /* margin: 30px 5% 5% 5%; */
+    }
+
+        .titulo_form{
+            padding-bottom: 50px;
         }
 
-        .contenido{
-            padding: 2em;
-        } 
-
-        .contenido p {
-            text-align: center; 
+        .formulario{
+            margin: 0;
+            padding: 5% 20% 5% 20%;
         }
-
-        .contenedor_tutorial hr{
-            display: none;
-        }
-
-        .html{
-            grid-column: 1/1;
-            grid-row: 1/1;
-            align-items: center;
-            margin: 0.8em;
-            /* border: solid white 1px ; */
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
-        }
-
-        .html:hover {
-            transform: scale(1.02);
-            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 1);
-        }
-
-        .css{
-            grid-column: 2/2;
-            grid-row: 1/1;
-            align-items: center;
-            margin: 0.8em;
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);           
-            /* border: solid white 1px ; */
-        }
-
-        .css:hover {
-            transform: scale(1.02);
-            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 1);
-        }
-
-        .js{
-            grid-column: 1/1;
-            grid-row: 2/2;
-            align-items: center;
-            margin: 0.8em;
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
-            /* border: solid white 1px ; */
-        }
-
-        .js:hover {
-            transform: scale(1.02);
-            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 1);
-        }
-
-        .python{
-            grid-column: 2/2;
-            grid-row: 2/2;
-            align-items: center;
-            margin: 0.8em;
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
-            /* border: solid white 1px ; */
-        }
-
-        .python:hover {
-            transform: scale(1.02);
-            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 1);
-        }
-
-        .programando_img{
-            display: block;
-            height: 12em;
+    
+        .grupo{
+            overflow: hidden;
+            width: 100%;
+            justify-content: center;
+            margin: 15px 0px 15px ;
             border-radius: 15px;
-            text-align: center;
-        } 
-        .contenido_img{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            vertical-align: bottom;
-        }  
-
-        
-        .iconos_inicio{
-            color: #3E80E9 ;
-            display: flex;
-            justify-content: center;
-        
+            box-shadow: 0px 8px 10px 0px rgba(0,0,0,1);
         }
-
-        .fa-html5, .fa-css3-alt, .fa-square-js, .fa-python{
-            align-items: center;
-            display: flex;
-            font-size: 3em !important;
-            padding: 0 1em !important;
+    
+        input, textarea{
+            border-radius: 15px;
+            overflow: hidden;
+            border-color: #6a6a6a;
+            border-style:ridge;
+            padding: 1em 1em 1em 0.5em;
+            display: block;
+            width: 100%;
+            font-weight: 800;
+            font-size: 17px;
+            font-style: italic;
+        }
+    
+        #btnEnviar{
+            background-color: white;
+            color: black;
+            border-radius: 12px;
+            border-color: white;
+            padding: 1em 1.5em;
+            box-shadow: 0px 8px 10px 0px rgba(0,0,0,1);
+            font-size: 17px;
+            font-style: italic;
+        }
+    
+        #btnEnviar:hover{
+            background-color: #3172a3;
+            color: white;
+            border-radius: 12px;
+            border-color: #5aaae7;
+            transform: scale(1.1);
+            font-weight: 800;
+        }
+    
+        .div_btn{
+            margin-top: 30px;
+            text-align: center;
         }
     
     /* FOOTER */
@@ -632,32 +597,7 @@ footer p{
     transform: scale(1.1);
 }
 
+/*CONTENIDO DEL INDEX*/
 
 
-#tutorial_btn{
-    display: block;
-    width: 50%;
-    margin: 0em 2em;
-    background-color: white;
-    color: black;
-    border-radius: 12px;
-    border-color: white;
-    padding: 1em ;
-    text-align: center;
-    text-decoration: none;
-}
-
-#tutorial_btn:hover{
-    background-color: #3172a3;
-    color: white;
-    border-radius: 12px;
-    font-size: 17px;
-    font-weight: 900;
-    border-color: #92bee0;
-    transform: scale(1.1);
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 1);
-}
-
-
-
-
+ 
