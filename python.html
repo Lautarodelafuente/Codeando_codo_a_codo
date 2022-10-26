@@ -83,14 +83,19 @@
                 </div>
             </div>
         </header> 
-
+       
         <aside class="aside">
             <ul> <a href="#introduccion-py">Introducción</a> </ul>
             <ul> <a href="#caracteristicas-py">Caracteristicas</a> </ul>
             <ul> <a href="#bibliotecas-py">Bibliotecas python</a> </ul>
             <ul> <a href="#marcos-py">Marcos de python </a></ul>
             <ul> <a href="#variables-py">Variables</a> </ul>
+            <ul> <a href="#TiposDeDatos-py"> Tipos de datos</a> </ul>
             <ul> <a href="#funciones-py">Funciones</a> </ul>
+            <ul> <a href="#EdC-py">Estructuras de control Python</a> </ul>
+            <ul> <a href="#pdf-py">Descargas de Pdf</a> </ul>
+            <ul> <a href="#enlaces-py">Enlaces</a> </ul>
+
         </aside>
 
         <main class="main">
@@ -120,6 +125,9 @@
                         <h3>Un lenguaje orientado a los objetos</h3>
                         <p>Python considera todo como un objeto, pero también admite otros tipos de programación, como la programación estructurada y la funcional.</p>
                 </div>
+                
+                
+                
                 <div id="bibliotecas-py" class="secciones">
                     <div>
                         <h1>¿Qué son las bibliotecas de Python?</h1>
@@ -172,6 +180,30 @@
                             <img src="img/py2.jpg" alt="ejemplo Python" class="imagen_main">
                         </div>
                 </div>
+
+                <div id="TiposDeDatos-py" class="secciones">
+                    <div>
+                        <h1>Tipos de datos</h1>
+                    </div>
+                    <div>
+                        <p> Los tipos de datos se pueden clasificar en: 
+                            <ul>
+                                <li> Mutable: su valor puede cambiarse en tiempo de ejecución.</li><br> 
+                                <li> Inmutable: su valor no puede cambiarse en tiempo de ejecución. </li><br>
+                                <li> Enteros (int) Representan todos los números enteros (positivos, negativos y 0), sin parte decimal.</li><br>
+                                <li> Reales (float) Representa los números reales, tienen una parte entera y otra decimal. </li><br>
+                                <li> Complejos (complex) Representan números complejos, con una parte real y otra imaginaria. Son tipos de datos inmutables. </li><br>
+                                <li> Booleanos Pueden tener únicamente dos tipos de valores: "True" o "False". Estos sirven para agregar atributos a la variable si es verdadero o falso. </li><br>
+                                <li> Cadena (str) Permite almacenar cadenas de caracteres. Es de tipo inmutable. </li><br>
+                                <li> Lista (list) Variable que almacenan arrays, internamente cada posición puede ser un tipo de datos distinto. Se escribe entre corchetes, y sus elementos se separan con comas. Ejemplo: ingredientes = ['huevos', 'harina', 'leche', 'azúcar'] </li><br>
+                                <li> Tupla Las tuplas son objetos de tipo secuencia, específicamente es un tipo de dato lista inmutable. Esta no puede modificarse de ningún modo después de su creación. Ejemplo: mi_tupla = ('Python', True, 'ananá', 34) </li><br>
+                                <li> Diccionario (dict) Pueden ser creados colocando una lista separada por coma de pares "key:value" entre {}. Único tipo de mapeo estándar actual. Ejemplo: mi_dict = {'Ana': 27, 'Juan': 51} </li><br>
+                                <li> Conjuntos Un conjunto, es una colección no ordenada y sin elementos repetidos. Los usos básicos de éstos incluyen verificación de pertenencia y eliminación de entradas duplicadas. set: Mutable, sin orden, no contiene duplicados. Ejemplo: my_set = set([3.6, 'Entre Ríos', False]) </li><br>
+                                <li> frozenset: Inmutable, sin orden, no contiene duplicados. Ejemplo: my_fs = frozenset([3.6, 'Entre Ríos', False])</li>
+                        </p><br>
+                    </div>
+                </div>
+                   
                 <div id="funciones-py" class="secciones">
                     <div>
                         <h1>¿Qué son las funciones en Python?</h1>
@@ -193,7 +225,151 @@
                         <ul>Sentencia de retorno (opcional).</ul>
                 </div>
             </div>
+
+            <div id="EdC-py" class="secciones">
+                <div>
+                    <br>
+                    <h1>Estructuras de control de python</h1>
+                </div>
+                <div>
+                    <p>
+                      Las estructuras de nos permiten alterar el flujo de nuestro programa. Esto significa,
+              que a lo largo del mismo, iremos planteando algunas condiciones, que van a definir qué
+              parte del código va a ejecutarse a continuación, cuál se omitirá, y cuál se va a repetir (y cuántas veces/hasta qué momento) </p>
+            </p>
+              <p> Las estructuras de control pueden dividirse en 2 grandes grupos: condicionales e Iterativos </p>
+              <p> Los primeros condicionan la ejecución del bloque de código según el valor de verdad (booleano) de una expresión. </p>
+              <p> Los últimos nos marcan la repetición de un proceso un número definido de veces o dependiendo del estado booleano de una expresión. </p>
+              <p> Pero antes debemos recordar un tema fundamental en Python: la indentación. Python utiliza la indentación para delimitar una estructura, permitiendo establecer bloques de código. No existen comandos para finalizar las líneas, ni llaves con las que delimitar el código. Los únicos delimitadores existentes son los dos puntos ( : ) y la indentación del
+              código. </p>
+              <p>  La indentación va a separar nuestros bloques de código para saber dónde comienza y dónde termina cada proceso.
+              </p>
+                 <br>
+              <h1>Estructuras de control condicionales </h1>
+               <p>
+               Son las que definen la ejecución de un bloque de código según el valor de verdad de una expresión.
+               </p>
+              
+               <h2>1. Condicional if</h2>
+
+               <p>Se utiliza para tomar decisiones. Evalúa si una expresión es True o False y ejecuta el bloque de código si el resultado es True.
+               </p>
+
+               <p>Se obtiene False si se encuentra:
+              - un número igual a cero (0, 0.0, 0 + 0j)
+              - un contenedor vacío (lista, tupla, conjunto, diccionario)
+              - False o None
+              </p>
+              <img src="img/py3.png" alt="ejemplo Python" class="imagen_main">
+              
+              <h2>2. else</h2>
+              <p> Permite agregar un bloque de código que se ejecutará si la condición a evaluar resulta
+              False.
+              </p>
+              <img src="img/py4.png" alt="ejemplo Python" class="imagen_main">
+              
+              <h2>3. elif</h2>
+              <p>
+              Es una combinación de else + if. Es decir, lo usamos si queremos evaluar otra condición
+              si no se cumple el primer if. Podemos utilizar tantos elif como sean necesarios.
+              </p>
+              
+              <img src="img/py5.png" alt="ejemplo Python" class="imagen_main">
+              
+              
+              <h1> Estructuras de control iterativas I </h1>
+              <p>
+              Son las que permiten ejecutar un bloque de código múltiples veces (ciclos)
+              </p>
+              <h2>1 while</h2>
+              <p>
+              Realiza múltiples iteraciones basándose en el resultado de una expresión lógica que puede tener como resultado True o False
+              </p>
+              <h2>1.a) while controlado por conteo</h2>
+              
+              <p>
+              En este caso, el bucle while está controlado por la variable nro, que se va incrementando con cada ejecución.
+              Cuando esta variable llega a valer 10, la condición del bucle pasa a ser False y termina el ciclo.
+              </p>
+              
+              <img src="img/py6.png" alt="ejemplo Python" class="imagen_main">
+              
+              <h2>1.b) while controlado por evento </h2>
+              <p>
+              El bucle se interrumpe cuando el usuario ingresa -1.
+              <p>
+              
+                <img src="img/py7.png" alt="ejemplo Python" class="imagen_main">
+              
+              <h2> 1.c) while con else </h2>
+              <p> 
+              Una manera alternativa más legible para el código anterior se logra combinando while con
+              else.
+              </p>
+              
+              <img src="img/py8.png" alt="ejemplo Python" class="imagen_main">
+              
+                <h1>Estructuras de control iterativas II</h1>
+              <h2> 2. for </h2>
+              <h2> 2.a) for controlado por la cantidad de elementos</h2>
+              <p> 
+              En este caso, el código se va a repetir para cada uno de los elementos de la lista
+              numeros.
+              </p> 
+              <img src="img/py9.png"  alt="ejemplo Python" class="imagen_main">
+
+              <h2>2.b) for y la clase range</h2>
+              <p> Range es un tipo de dato que simula una secuencia numérica. <br>
+                Para construirlo
+              necesitamos de 1 a 3 parámetros:<br><br>
+              - range(max) crea un rango de número desde 0 hasta max-1<br>
+              - range(min, max) crea un rango de número desde min hasta max-1<br>
+              - range(min, max, step) crea un rango de número desde min hasta max-1, cuyos<br>
+              valores se van incrementando de step en step.<br>
+              Por ejemplo, el siguiente código va a imprimir los números pares desde el 0 hasta el 10.
+              </p>
+              <img src="img/py10.png"  alt="ejemplo Python" class="imagen_main">
+ 
+              </div>
+             </div>
+             <br>
+
+              
+            <div id="pdf-py" class="secciones">
+                <div>
+                    <h1>PDFs</h1>
+                </div>
+                <div>
+                    <br>
+                     <h3> Recursos de CaC en PDF</h3><br>
+                     <p>Variables, operadores, estructuras de control de flujo. 
+                        Tipos de datos primitivos y compuestos. 
+                        Métodos, paquetes y funciones. 
+                        Programación orientada a objetos en Python. </p>
+                   <p> <br>
+                    <img src="img/pdf.png" height="50px" width="auto"> <a download href="pdf/py/py1.pdf" >Parte 1 </a> <br>
+                    <img src="img/pdf.png" height="50px" width="auto"> <a download href="pdf/py/py2.pdf" >Parte 2 </a> <br> 
+                    <img src="img/pdf.png" height="50px" width="auto"> <a download href="pdf/py/py3.pdf" >Parte 3 </a> <br>
+                    <img src="img/pdf.png" height="50px" width="auto"> <a download href="pdf/py/py4.pdf" >Parte 4 </a> <br> 
+                    <img src="img/pdf.png" height="50px" width="auto"> <a download href="pdf/py/py5.pdf" >Parte 5 </a> <br>
+                            <br><br>       
+                  </p>
+            </div>
+        </div>
+        <div id="enlaces-py" class="secciones">
+            <div>
+                <h1>Enlaces:</h1>
+               
+                 <br>
+                <a href="https://www.python.org/downloads/" target="_blank"> Página oficial de descargas Python </a> <br>
+                <a href="https://docs.python.org/es/3/ "  target="_blank"> Documentación oficial python en español </a>
+
+           </div>
+        </div>
+
+
         </main>
+
         <footer>
             <div class="footer">
     
@@ -206,7 +382,7 @@
                 <p>© 2022 Codeando</p>
     
                 <div class="iconos_footer">
-                    <a href="https://github.com/Lautarodelafuente/Codeando_codo_a_codo" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
                     <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
                     <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 </div>

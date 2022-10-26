@@ -839,13 +839,19 @@ a:hover {
 }
 
 
+
 #TiposDeDatos-py{
     text-align: justify;
     }
     
- #pdf-py a{
-        text-decoration: none;
-        color: orangered;
-        text-align: justify;
-    }
+  #enlaces-py a{
+       
     
+        text-align: justify;
+        color:rgb(192, 192, 192);
+     }
+     #pdf-py a{
+        text-align: justify;
+        color:rgb(192, 192, 192);
+
+     }
