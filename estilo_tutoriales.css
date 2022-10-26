@@ -837,3 +837,15 @@ a:hover {
     }
     /*fin del ajuste de imagen*/
 }
+
+
+#TiposDeDatos-py{
+    text-align: justify;
+    }
+    
+ #pdf-py a{
+        text-decoration: none;
+        color: orangered;
+        text-align: justify;
+    }
+    
