@@ -359,7 +359,7 @@ a:hover {
     }
 }
 
-/* Diseño para tablets o pc */
+/* Diseño para pc */
 @media (min-width: 768px) {
     .contenedor {
         display: grid;
@@ -636,8 +636,8 @@ a:hover {
     }
 }
 
-
-@media (min-width: 768px) and (max-width: 1080px) {
+/*Diseño para tablet*/
+@media (min-width: 768px) and (max-width: 1023px) {
     
 
     .contenedor_tutorial {

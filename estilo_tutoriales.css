@@ -225,17 +225,17 @@ a:hover {
     .contenedor .main{
         grid-column: span 3;
         grid-row: 2/3;
-        padding: 0% 8% 2% 0%;
-        background: rgb(37,86,122);
-        background: linear-gradient(270deg, rgba(37,86,122,1) 0%, rgba(0,0,0,1) 24%);
+        padding: 0% 8% 2% 2%;
+        background: rgb(25, 56, 80);
+        background: radial-gradient(circle, rgb(27, 59, 84) 30%, rgb(10, 10, 10) 100%);
     }
 
     /*Posicion del aside*/
     .contenedor .aside{
         grid-column: 1/2;
         grid-row: 2/3;
-        background: rgb(37,86,122);
-        background: linear-gradient(90deg, rgba(37,86,122,1) 0%, rgba(0,0,0,1) 58%);
+        background: rgb(25, 56, 80);
+        background: radial-gradient(circle, rgb(27, 59, 84) 30%, rgb(10, 10, 10) 100%);
     }
 
     /*Posicion del footer*/
@@ -275,10 +275,11 @@ a:hover {
 
     /*Estilo del footer*/
     .footer{
-        background: rgb(49,114,163);
-        background: radial-gradient(circle, rgba(49,114,163,1) 0%, rgba(0,0,0,1) 100%);
+        /*background: rgb(49,114,163);
+        background: radial-gradient(circle, rgba(49,114,163,1) 0%, rgba(0,0,0,1) 100%);*/
+        background: rgb(9, 20, 27);
+        background: radial-gradient(circle, rgb(9, 20, 27) 10%, rgba(0, 0, 0, 1) 100%);
         padding: 15px 0px;
-        /* position: absolute; */
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -499,16 +500,16 @@ a:hover {
         grid-column: span 1;
         grid-row: 2/3;
         padding: 2% 5%;
-        background: rgb(37,86,122);
-        background: linear-gradient(270deg, rgba(37,86,122,1) 0%, rgba(0,0,0,1) 24%);
+        background: rgb(25, 56, 80);
+        background: radial-gradient(circle, rgb(27, 59, 84) 30%, rgb(10, 10, 10) 100%);
     }
 
     /*Posicion del aside*/
     .contenedor .aside{
         grid-column: 1/-1;
         grid-row: 3/4;
-        background: rgb(37,86,122);
-        background: linear-gradient(90deg, rgba(37,86,122,1) 0%, rgba(0,0,0,1) 58%);
+        background: rgb(25, 56, 80);
+        background: radial-gradient(circle, rgb(27, 59, 84) 20%, rgb(10, 10, 10) 100%);
     }
 
     /*Posicion del footer*/
@@ -519,8 +520,8 @@ a:hover {
 
     /*Estilo del footer*/
     .footer{
-        background: rgb(49,114,163);
-        background: radial-gradient(circle, rgba(49,114,163,1) 0%, rgba(0,0,0,1) 100%);
+        background: rgb(9, 20, 27);
+        background: radial-gradient(circle, rgb(9, 20, 27) 10%, rgba(0, 0, 0, 1) 100%);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -623,8 +624,7 @@ a:hover {
 @media (max-width: 767px){
     .contenedor .main{
         padding: 2% 4%;
-        background: rgb(37,86,122);
-        background: linear-gradient(270deg, rgba(37,86,122,1) 0%, rgba(0,0,0,1) 24%);
+        background-color: #03192E;
     }
 
      /* HEADER */
@@ -780,8 +780,10 @@ a:hover {
 
     /*Estilo del footer*/
     .footer{
-        background: rgb(49,114,163);
-        background: radial-gradient(circle, rgba(49,114,163,1) 0%, rgba(0,0,0,1) 100%);
+        /*background: rgb(49,114,163);
+        background: radial-gradient(circle, rgba(49,114,163,1) 0%, rgba(0,0,0,1) 100%);*/
+        background: rgb(9, 20, 27);
+        background: radial-gradient(circle, rgb(9, 20, 27) 10%, rgba(0, 0, 0, 1) 100%);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -817,6 +819,9 @@ a:hover {
     .secciones{
         border-top: double;
         padding-bottom: 4%;
+        background: rgb(25, 56, 80);
+        background: radial-gradient(circle, rgb(27, 59, 84) 20%, rgb(10, 10, 10) 100%);
+        padding-left: 2%;
     } 
     /*Ajuste de imagenes*/
     .div-imagen{
