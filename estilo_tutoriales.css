@@ -844,19 +844,15 @@ a:hover {
 }
 
 
+.secciones h1{
 
-#TiposDeDatos-py{
-    text-align: justify;
-    }
-    
-  #enlaces-py a{
-       
-    
-        text-align: justify;
-        color:rgb(192, 192, 192);
-     }
-     #pdf-py a{
-        text-align: justify;
-        color:rgb(192, 192, 192);
+text-align: center;
+}
 
-     }
+.secciones a{
+
+   text-align: justify;
+   color:rgb(192, 192, 192);
+}
+
+ 
