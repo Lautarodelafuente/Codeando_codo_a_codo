@@ -515,6 +515,7 @@ a:hover {
 
     .contenedor_tutorial {
         display: flex;
+        flex-direction: row;
         text-align: center;
         padding: 0;
         margin: 50px 0 30px 0;
@@ -525,6 +526,7 @@ a:hover {
         padding: 1.5em;
         align-items: center;
         margin: 1em;
+        width: 100%;
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
     }
 
@@ -541,7 +543,7 @@ a:hover {
         width: 16em;
         height: 12em;
         border-radius: 15px;
-        text-align: center;
+        /* text-align: center; */
     }
 
     .contenido_img {
