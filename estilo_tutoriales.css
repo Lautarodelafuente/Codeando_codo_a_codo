@@ -30,7 +30,7 @@ a:hover {
 .logo{
     display: flex;
     align-items: center;
-    max-width: 315px;
+    width: max-content;
 }
 .logo img {
     margin-right: 10px;
@@ -45,6 +45,7 @@ a:hover {
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
+    font-size: min(max(20px, 2.5vw), 30px);
     animation: 
       typing 3.5s steps(40, end),
       blink-caret .75s step-end infinite;
@@ -65,23 +66,17 @@ a:hover {
 
 
 /*Diseño de pantallas grandes*/
-@media (min-width: 1024px) {
+@media (min-width: 1220px) {
     .contenedor{
         padding: 0px;
         width: auto;
         max-width: auto !important;
         display: grid;
-        grid-gap: 1em;
         /*4 columnas de igual tamaño*/
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, minmax(300px, auto));
         grid-template-rows: repeat(3, auto);
     }
 
-
-    .contenedor .main, .contenedor .footer, 
-    .contenedor .aside, .contenedor .header{
-        padding: 0.8em;
-    }
 
     /*Posiciono el header*/
     /* .contenedor .header{
@@ -95,7 +90,10 @@ a:hover {
         grid-column: 1/ -1;
         grid-row: 1/2;
         border: 0px;
-        background-color: #03192E;
+        background-color: rgb(9, 20, 27);
+        background: radial-gradient(circle, rgb(9, 20, 27) 10%, rgb(0, 0, 0) 100%);
+        box-shadow: 1px 6px 9px 3px rgba(0, 0, 0, 0.74);
+        z-index: 100;
         color: #FF9B98;
         justify-content: space-between;
         padding: 0px;
@@ -225,9 +223,98 @@ a:hover {
     .contenedor .main{
         grid-column: span 3;
         grid-row: 2/3;
-        padding: 0% 8% 2% 2%;
+        /* padding: 0% 8% 2% 2%; */
         background: rgb(25, 56, 80);
-        background: radial-gradient(circle, rgb(27, 59, 84) 30%, rgb(10, 10, 10) 100%);
+        background: radial-gradient(circle, rgb(27, 59, 84) 20%, rgb(10, 10, 10) 100%);
+    }
+
+    .secciones{
+        padding: 2em 5em 2em 5em;
+    }
+
+    .secciones h1{
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    .secciones h3{
+        text-align: left;
+        padding-top: 30px;
+        padding-bottom: 25px;
+        margin: 0;
+        font-style: italic;
+    }
+
+    .secciones p{
+        font-size: 24px;
+        text-align: justify;
+        text-indent: 35px;
+    }
+
+    .secciones ul li {
+        font-size: 22px;
+    }
+
+    .secciones a{
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        text-align: justify;
+        color:rgb(192, 192, 192);
+    }
+
+    .descargas{
+        display: flex;
+        justify-content: space-around;
+        margin: 55px;
+
+    }
+
+    .descargas-columnas{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 55px;
+    }
+
+    .descargas-columnas a {
+        text-align: center !important;
+    }
+
+    .secciones div a{
+        padding: 20px;
+        align-items: center;
+        vertical-align: middle;
+        box-shadow: 1px 1px 21px 8px rgba(0,0,0,0.65);
+        border-radius: 12px;
+        background-color: #0d377b;
+    }
+
+    .secciones div a:hover{
+        background-color: inherit;
+        box-shadow: 1px 1px 21px 8px rgba(0,0,0,0.65) inset;
+        -webkit-box-shadow: 1px 1px 21px 8px rgba(0,0,0,0.65) inset;
+        -moz-box-shadow: 1px 1px 21px 8px rgba(0,0,0,0.65) inset;
+    }
+
+    .secciones .div-imagen{
+        padding: 30px 0 30px 0;
+    }
+
+    .secciones ul p {
+        text-indent: 0px;
+        font-style: italic;
+    }
+
+    .Videos_tutoriales {
+        padding: 0px;
+        margin: 25px;
+        text-align: center;
+    }
+
+    .Videos_tutoriales > iframe{
+        width: 100%;
+        height: 25em;
     }
 
     /*Posicion del aside*/
@@ -235,8 +322,40 @@ a:hover {
         grid-column: 1/2;
         grid-row: 2/3;
         background: rgb(25, 56, 80);
-        background: radial-gradient(circle, rgb(27, 59, 84) 30%, rgb(10, 10, 10) 100%);
+        background: radial-gradient(circle, rgb(27, 59, 84) 20%, rgb(10, 10, 10) 100%);
+        box-shadow: 10px 2px 5px 0px rgba(0,0,0,0.75);
+        z-index: 1;
+        padding: 0;
     }
+
+    .aside>ul{
+        margin: 0;
+        padding: 25px 0 0 0;
+        position: sticky;
+        top: 10px;
+    }
+
+    .aside ul li {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aside ul li a{
+        width: 100%;
+        margin: 0;
+        padding: 1em 0 1em 1em;
+        font-size: 20px;
+    }
+
+    .aside ul li a:hover{
+        transform: scale(1.1);
+        font-weight: 700;
+        padding: 1em 0 1em 2em;
+    }    
 
     /*Posicion del footer*/
     footer {
@@ -268,17 +387,14 @@ a:hover {
         justify-content: center;
     }
 
-    .aside ul{
-        padding-left: 5% !important;
-        margin-right: 0% !important;
-    }
-
     /*Estilo del footer*/
     .footer{
         /*background: rgb(49,114,163);
         background: radial-gradient(circle, rgba(49,114,163,1) 0%, rgba(0,0,0,1) 100%);*/
         background: rgb(9, 20, 27);
         background: radial-gradient(circle, rgb(9, 20, 27) 10%, rgba(0, 0, 0, 1) 100%);
+        box-shadow: -1px -6px 9px 3px rgba(0, 0, 0, 0.74);
+        z-index: 1000;
         padding: 15px 0px;
         display: flex;
         flex-direction: row;
@@ -287,7 +403,7 @@ a:hover {
         padding: 20px 50px 20px 50px;
         /* overflow: hidden; */
         height: 90px;
-        border-top: black 3px solid;
+        /* border-top: black 3px solid; */
         /* border: white 1px solid; */
     }
     
@@ -339,14 +455,11 @@ a:hover {
     }    
     /*Fin del estilo del footer*/
 
-    #editor_html ul{
-        font-size: 0.8em;
-    }
 } /*Fin del diseño de pantallas grandes*/
 
 
 /*Diseño para tablet*/
-@media (min-width: 768px) and (max-width: 1023px){
+@media (min-width: 768px) and (max-width: 1219px){
     .contenedor{
         padding: 0px;
         width: auto;
@@ -370,13 +483,17 @@ a:hover {
         grid-column: 1/-1;
         grid-row: 1/2;
         border: 0px;
-        background-color: #03192E;
+        background-color: rgb(9, 20, 27);
+        background: radial-gradient(circle, rgb(9, 20, 27) 10%, rgb(0, 0, 0) 100%);
+        box-shadow: 1px 6px 9px 3px rgba(0, 0, 0, 0.74);
+        z-index: 1;
         color: #FF9B98;
         justify-content: space-between;
         padding: 0px;
         margin: 0px;
         align-items: center;
     }
+
 
         .icon{
             display: none;
@@ -408,7 +525,7 @@ a:hover {
             margin: 0;
             /* border: white 2px solid; */
             overflow: auto;
-            font-size: 17px;  
+            font-size: 16px;  
             font-family: 'Courier New', Courier, monospace;
         }
 
@@ -498,18 +615,112 @@ a:hover {
     /*Posiciono el main*/
     .contenedor .main{
         grid-column: span 1;
-        grid-row: 2/3;
-        padding: 2% 5%;
+        grid-row: 3/4;
         background: rgb(25, 56, 80);
-        background: radial-gradient(circle, rgb(27, 59, 84) 30%, rgb(10, 10, 10) 100%);
+        background: radial-gradient(circle, rgb(27, 59, 84) 20%, rgb(10, 10, 10) 100%);
+        padding-top: 40px;
+    }
+
+    .secciones{
+        padding: 3em 5em 2em 5em;
+        box-shadow: 0px 8px 20px 0px rgba(0, 0, 0,0.7);
+    }
+
+    .secciones h1{
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    .secciones h3{
+        text-align: left;
+        padding-top: 30px;
+        padding-bottom: 25px;
+        margin: 0;
+        font-style: italic;
+    }
+
+    .secciones p{
+        font-size: 24px;
+        text-align: justify;
+        text-indent: 35px;
+    }
+
+    .secciones ul li {
+        font-size: 22px;
+    }
+
+    .secciones a{
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        text-align: justify;
+        color:rgb(192, 192, 192);
+    }
+
+    .descargas{
+        display: flex;
+        justify-content: space-around;
+        margin: 55px;
+
+    }
+
+    .descargas-columnas{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 55px;
+    }
+
+    .descargas-columnas a {
+        text-align: center !important;
+    }
+
+    .secciones div a{
+        padding: 20px;
+        align-items: center;
+        vertical-align: middle;
+        box-shadow: 1px 1px 21px 8px rgba(0,0,0,0.65);
+        border-radius: 12px;
+        background-color: #0d377b;
+    }
+
+    .secciones div a:hover{
+        background-color: inherit;
+        box-shadow: 1px 1px 21px 8px rgba(0,0,0,0.65) inset;
+        -webkit-box-shadow: 1px 1px 21px 8px rgba(0,0,0,0.65) inset;
+        -moz-box-shadow: 1px 1px 21px 8px rgba(0,0,0,0.65) inset;
+    }
+
+    .secciones .div-imagen{
+        padding: 30px 0 30px 0;
+    }
+
+    .secciones ul p {
+        text-indent: 0px;
+        font-style: italic;
+    }
+
+    .Videos_tutoriales {
+        padding: 0px;
+        margin: 25px;
+        text-align: center;
+    }
+
+    .Videos_tutoriales > iframe{
+        width: 100%;
+        height: 25em;
     }
 
     /*Posicion del aside*/
     .contenedor .aside{
         grid-column: 1/-1;
-        grid-row: 3/4;
+        grid-row: 2/3;
+        display: none;
+        flex-direction: column;
         background: rgb(25, 56, 80);
         background: radial-gradient(circle, rgb(27, 59, 84) 20%, rgb(10, 10, 10) 100%);
+        border: white 1px solid;
+        width: 100%;
     }
 
     /*Posicion del footer*/
@@ -522,6 +733,8 @@ a:hover {
     .footer{
         background: rgb(9, 20, 27);
         background: radial-gradient(circle, rgb(9, 20, 27) 10%, rgba(0, 0, 0, 1) 100%);
+        box-shadow: -1px -6px 9px 3px rgba(0, 0, 0, 0.74);
+        z-index: 1000;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -563,6 +776,8 @@ a:hover {
         padding: 5% 0%;
     }
     /*Fin del estilo del aside*/
+
+    
 
     /*Estilo de Main*/
     /*Ajuste de imagenes*/
@@ -623,7 +838,7 @@ a:hover {
 /*Diseño para smartphone*/
 @media (max-width: 767px){
     .contenedor .main{
-        padding: 2% 4%;
+        padding: 0;
         background-color: #03192E;
     }
 
@@ -634,7 +849,10 @@ a:hover {
         padding: 0px;
         margin: 0px;
         border: 0px;
-        background-color: #03192E;
+        background-color: rgb(9, 20, 27);
+        background: radial-gradient(circle, rgb(9, 20, 27) 10%, rgb(0, 0, 0) 100%);
+        box-shadow: 1px 8px 9px 3px rgba(0, 0, 0, 0.74);
+        z-index: 1100;
     }
 
 
@@ -648,6 +866,7 @@ a:hover {
             flex-direction: column;
             width: 100%;
             border-top: black 3px solid;
+            background-color: rgb(9, 20, 27);
         }
         
         .topnav #menu{
@@ -656,7 +875,7 @@ a:hover {
             font-size: 18px;
             text-align: right;
             transition: all 500ms ease;
-
+            border-top: rgba(0, 0, 0, 0.3) 0.5px solid ;
         }
 
         :not(.dropdown) #menu:hover {
@@ -778,16 +997,157 @@ a:hover {
         display: none;
     }
 
+    main {
+        background: rgb(25, 56, 80);
+        background: radial-gradient(circle, rgb(27, 59, 84) 20%, rgb(10, 10, 10) 100%);
+    }
+
+    /*Estilo de Main*/
+    .secciones{
+        /* border-top: double; */
+        padding: 3em 2em 3em 2em;
+        background: transparent;
+        text-align: justify;
+        box-shadow: 0px 8px 20px 0px rgba(0, 0, 0,0.7);
+    } 
+    
+
+    .secciones h1{
+        margin: 0;
+        font-size: min(max(30px, 8vw), 40px);
+        text-transform: uppercase;
+    }
+
+    .secciones h3{
+        text-align: left;
+        font-size: min(max(25px, 7vw), 35px);
+        padding-top: 30px;
+        padding-bottom: 25px;
+        margin: 0;
+        font-style: italic;
+    }
+
+    .secciones p{
+        font-size: min(max(17px, 2.5vw), 30px);
+        text-align: justify;
+        text-indent: 35px;
+    }
+
+    .secciones ul li {
+        font-size: 22px;
+    }
+
+    .secciones div ul li p strong{
+        text-decoration: underline ;
+    }
+
+    .warning{
+        text-align: center;
+        justify-content: center;
+        font-size: 25px;
+        background-color: rgb(192, 59, 59);
+    }
+
+    .secciones a{
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+    }
+
+    .descargas{
+        display: flex;
+        justify-content: space-around;
+        margin: 55px;
+
+    }
+
+    .descargas-columnas{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 25px;
+    }
+
+    .descargas-columnas a {
+        text-align: center !important;
+    }
+    
+    .secciones div a{
+        padding: 20px;
+        align-items: center;
+        vertical-align: middle;
+        box-shadow: 1px 1px 21px 8px rgba(0,0,0,0.65);
+        border-radius: 12px;
+        background-color: #0d377b;
+    }
+
+    .secciones div a:hover{
+        background-color: inherit;
+        box-shadow: 1px 1px 21px 8px rgba(0,0,0,0.65) inset;
+        -webkit-box-shadow: 1px 1px 21px 8px rgba(0,0,0,0.65) inset;
+        -moz-box-shadow: 1px 1px 21px 8px rgba(0,0,0,0.65) inset;
+    }
+
+    .secciones .div-imagen{
+        padding: 30px 0 30px 0;
+    }
+
+    .secciones ul p {
+        text-indent: 0px;
+        font-style: italic;
+    }
+
+    .Videos_tutoriales {
+        padding: 0px;
+        margin: 25px;
+        text-align: center;
+    }
+
+    .Videos_tutoriales > iframe{
+        width: 100%;
+        height: 25em;
+    }
+
+    /*Ajuste de imagenes*/
+    .div-imagen{
+        display: flex;
+        justify-content: center;
+    }
+    .imagen_main{
+        width: 65%;
+    }
+    .imagen_main2, .imagen_main1{
+        width: 100%;
+    }
+    .imagen_main3{
+        width: 40%;
+    }
+    .imagen_main4{
+        width: 50%;
+    }
+    
+    .secciones a{
+        text-align: justify;
+        color:rgb(192, 192, 192);
+    }
+    
+    .descargas-columnas a {
+        text-align: center !important;
+    }
+
+
     /*Estilo del footer*/
     .footer{
         /*background: rgb(49,114,163);
         background: radial-gradient(circle, rgba(49,114,163,1) 0%, rgba(0,0,0,1) 100%);*/
         background: rgb(9, 20, 27);
         background: radial-gradient(circle, rgb(9, 20, 27) 10%, rgba(0, 0, 0, 1) 100%);
+        box-shadow: -1px -6px 9px 3px rgba(0, 0, 0, 0.74);
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 2%;
+        z-index: 50;
     }
 
     footer #logo_footer{
@@ -815,44 +1175,15 @@ a:hover {
     }
     /*Fin del estilo del footer*/
 
-    /*Estilo de Main*/
-    .secciones{
-        border-top: double;
-        padding-bottom: 4%;
-        background: rgb(25, 56, 80);
-        background: radial-gradient(circle, rgb(27, 59, 84) 20%, rgb(10, 10, 10) 100%);
-        padding-left: 2%;
-    } 
-    /*Ajuste de imagenes*/
-    .div-imagen{
-        display: flex;
-        justify-content: center;
-    }
-    .imagen_main{
-        width: 65%;
-    }
-    .imagen_main2, .imagen_main1{
-        width: 100%;
-    }
-    .imagen_main3{
-        width: 40%;
-    }
-    .imagen_main4{
-        width: 50%;
-    }
+    
     /*fin del ajuste de imagen*/
 }
 
 
 .secciones h1{
-
-text-align: center;
+    text-align: center;
+    padding-bottom: 30px;
 }
 
-.secciones a{
-
-   text-align: justify;
-   color:rgb(192, 192, 192);
-}
 
  

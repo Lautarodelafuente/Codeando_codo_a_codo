@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo_tutoriales.css">
     <title>Tutorial</title>
-    
+
     <!-- FONT-AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
     <link rel="stylesheet" href="fontawesome/fontawesome-free-6.2.0-web/css/all.min.css">
     <link rel="stylesheet" href="fontawesome/fontawesome-free-6.2.0-web/css/fontawesome.min.css">
-    
+
     <!--MENU-->
     <script src="menu.js"></script>
 </head>
@@ -24,50 +25,50 @@
                 <img src="img/icons8-coding-96.png" alt="Codeando">
                 <h2 class="Nombre-pagina">Codeando...</h2>
             </a>
-            
+
             <!-- Boton de menu -->
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>  
-                </a>
-            
+                <i class="fa fa-bars"></i>
+            </a>
+
             <div class="topnav">
                 <div id="myLinks">
-                <!-- Links de navegacion -->
+                    <!-- Links de navegacion -->
                     <div id="menu"><a href="index.html">Inicio</a></div>
-                    
-                    
-                    
+
+
+
                     <div id="menu"><a href="contacto.html">Contacto</a></div>
-                    
+
                     <div id="menu"><a href="acerca.html">Acerca de</a></div>
-    
-                    <div  class="dropdown">
-                        
+
+                    <div class="dropdown">
+
                         <button id="menu" class="dropbtn" onclick="openMenu()">
-                            <i class="fa fa-caret-down"></i> Tutoriales  
-                        </button> 
-                        
+                            <i class="fa fa-caret-down"></i> Tutoriales
+                        </button>
+
                         <div class="dropdown-content">
                             <a href="html.html">HTML</a>
                             <a href="css.html">CSS</a>
                             <a href="javascript.html">javaScript</a>
                             <a href="python.html">Python</a>
                         </div>
-                    </div> 
-    
+                    </div>
+
                 </div>
             </div>
-    
+
             <div class="topnavResponsive">
                 <!-- Links de navegacion -->
                 <div id="myLinksResponsive">
-                    
+
                     <a id="menu-responsive" href="index.html">Inicio</a>
                     <!-- <a  href="#">Tutoriales</a> -->
-                    
+
                     <div class="dropdown-responsive">
-                        <button id="menu-responsive" class="dropbtn-responsive">Tutoriales 
-                        <i class="fa fa-caret-down"></i>
+                        <button id="menu-responsive" class="dropbtn-responsive">Tutoriales
+                            <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="dropdown-content-responsive">
                             <a href="html.html">HTML</a>
@@ -75,25 +76,27 @@
                             <a href="javascript.html">javaScript</a>
                             <a href="python.html">Python</a>
                         </div>
-                    </div> 
-                    
+                    </div>
+
                     <a id="menu-responsive" href="contacto.html">Contacto</a>
-                    
+
                     <a id="menu-responsive" href="acerca.html">Acerca de</a>
-                
+
                 </div>
             </div>
-        </header> 
+        </header>
 
-        <aside class="aside">            
-            <ul> <a href="#introduccion_js">Introducción</a> </ul>
-            <ul> <a href="#etiqueta_js">Etiqueda script</a> </ul>
-            <ul> <a href="#variables_js">Variales Js</a> </ul>
-            <ul> <a href="#datos_js">Tipos de datos </a></ul>
-            <ul> <a href="#operadores_js">Operadores aritmeticos</a> </ul>
-            <ul> <a href="#videos">Videos de clases Js</a> </ul>
-            <ul> <a href="#pdf-js">Descargas de Pdf</a> </ul>
-            <ul> <a href="#enlaces">Enlaces de interés</a> </ul>
+        <aside class="aside">
+            <ul>
+                <li> <a href="#introduccion_js">Introducción</a> </li>
+                <li> <a href="#etiqueta_js">Etiqueda script</a> </li>
+                <li> <a href="#variables_js">Variales Js</a> </li>
+                <li> <a href="#datos_js">Tipos de datos </a></li>
+                <li> <a href="#operadores_js">Operadores aritmeticos</a> </li>
+                <li> <a href="#videos">Videos de clases Js</a> </li>
+                <li> <a href="#pdf-js">Descargas de Pdf</a> </li>
+                <li> <a href="#enlaces">Enlaces de interés</a> </li>
+            </ul>
         </aside>
 
         <main class="main">
@@ -102,8 +105,15 @@
                     <h1>¿Que es JavaScript?</h1>
                 </div>
                 <div>
-                    <p>JavaScript es un lenguaje de programación que te permite implementar cosas complejas en páginas web. Cada vez que una página web hace algo más que sentarse ahí y mostrar información estática para que la veas, mostrando actualizaciones de contenido oportunas, mapas interactivos, gráficos animados 2D/3D, desplazando máquinas reproductoras de video, o más, puedes apostar que probablemente JavaScript esté involucrado.</p>
-                    <p>Es un mecanismo con el que podemos indicarle al navegador qué tareas debe realizar, en qué orden y cuántas veces, entre otras. Con JS agregamos comportamiento a nuestro sitio, permitiendo al usuario interactuar con él, rompiendo con la idea de una web estática. Junto con HTML y CSS es la tercera pieza fundamental del desarrollo web.</p>
+                    <p>JavaScript es un lenguaje de programación que te permite implementar cosas complejas en páginas
+                        web. Cada vez que una página web hace algo más que sentarse ahí y mostrar información estática
+                        para que la veas, mostrando actualizaciones de contenido oportunas, mapas interactivos, gráficos
+                        animados 2D/3D, desplazando máquinas reproductoras de video, o más, puedes apostar que
+                        probablemente JavaScript esté involucrado.</p>
+                    <p>Es un mecanismo con el que podemos indicarle al navegador qué tareas debe realizar, en qué orden
+                        y cuántas veces, entre otras. Con JS agregamos comportamiento a nuestro sitio, permitiendo al
+                        usuario interactuar con él, rompiendo con la idea de una web estática. Junto con HTML y CSS es
+                        la tercera pieza fundamental del desarrollo web.</p>
                 </div>
             </div>
             <div id="etiqueta_js" class="secciones">
@@ -111,11 +121,26 @@
                     <h1>La ubicación de la etiqueta "script"</h1>
                 </div>
                 <div>
-                    <p>Según cómo esté ubicada la etiqueta "script" el navegador ejecuta el archivo JavaScript en momentos diferentes:</p>
-                    <ul>En "head": antes de empezar a dibujar la página, cuando está en blanco.</ul>
-                    <ul>En body: cuando la página se haya dibujado hasta el script.</ul>
-                    <ul>Antes de body: cuando la página se haya dibujado en su totalidad.</ul>
-                    <ul>Archivo externo: Podemos vincular al documento HTML un archivo con extensión .js usando la etiqueta script, haciendo referencia al nombre del archivo JavaScript con el atributo src (source).</ul>
+                    <p>Según cómo esté ubicada la etiqueta "script" el navegador ejecuta el archivo JavaScript en
+                        momentos diferentes:</p>
+                    <ul>
+                        <li>
+                            <p>En "head": antes de empezar a dibujar la página, cuando está en blanco.</p>
+                        </li>
+                        <li>
+                            <p>En body: cuando la página se haya dibujado hasta el script.</p>
+                        </li>
+                        <li>
+                            <p>Antes de body: cuando la página se haya dibujado en su totalidad.</p>
+                        </li>
+                        <li>
+                            <p>Archivo externo: Podemos vincular al documento HTML un archivo con extensión .js usando
+                                la
+                                etiqueta script, haciendo referencia al nombre del archivo JavaScript con el atributo
+                                src
+                                (source).</p>
+                        </li>
+                    </ul>
                     <div class="div-imagen">
                         <img src="img/js1.jpg" alt="archivo externo" class="imagen_main">
                     </div>
@@ -126,157 +151,240 @@
                     <h1>¿Qué son las variables en JS?</h1>
                 </div>
                 <div>
-                    <p>Es un pequeño espacio en la memoria, donde se guarda un dato. Podemos imaginarlas como “cajitas” dentro de nuestro programa. Tienen tres características:</p>
-                    <ul>Nombre: debe ser representativo de la información que contiene. Se utiliza para diferenciar unas de otras y hacer referencia a ellas.</ul>
-                    <ul>Tipo de dato: puede ser número, texto, valores booleanos, etc.</ul>
-                    <ul>Contenido: el valor concreto que posee el dato almacenado.</ul>
-                    <p>Se llaman variables porque pueden cambiar su valor a lo largo del programa. Un programa puede tener muchas variables, y cada una de ellas tendrá un nombre que la identifique, un valor y un tipo de dato.</p>
+                    <p>Es un pequeño espacio en la memoria, donde se guarda un dato. Podemos imaginarlas como “cajitas”
+                        dentro de nuestro programa. Tienen tres características:</p>
+                    <ul>
+                        <li>
+                            <p>Nombre: debe ser representativo de la información que contiene. Se utiliza para
+                                diferenciar
+                                unas de otras y hacer referencia a ellas.</p>
+                        </li>
+                        <li>
+                            <p>Tipo de dato: puede ser número, texto, valores booleanos, etc.</p>
+                        </li>
+                        <li>
+                            <p>Contenido: el valor concreto que posee el dato almacenado.</p>
+                        </li>
+                    </ul>
+                    <p>Se llaman variables porque pueden cambiar su valor a lo largo del programa. Un programa puede
+                        tener muchas variables, y cada una de ellas tendrá un nombre que la identifique, un valor y un
+                        tipo de dato.</p>
                     <h3>¿Cómo se declaran?</h3>
-                    <p>Una variable que se ha declarado con var pero a la que no se le asignó un valor se dice que está indefinida (no conocemos el tipo de dato):</p>
+                    <p>Una variable que se ha declarado con var pero a la que no se le asignó un valor se dice que está
+                        indefinida (no conocemos el tipo de dato):</p>
                     <div class="div-imagen">
                         <img src="img/js2.jpg" alt="variable" class="imagen_main3">
                     </div>
-                    <p>En este caso la variable está “vacía”, no está definido el valor que colocará en memoria. No se ha asociado ningún contenido a esa variable.</p>
+                    <p>En este caso la variable está “vacía”, no está definido el valor que colocará en memoria. No se
+                        ha asociado ningún contenido a esa variable.</p>
                     <div class="div-imagen">
                         <img src="img/js3.jpg" alt="variable" class="imagen_main4">
                     </div>
-                    <p>Las sentencias en JS finalizan con “;”. La imagen anterior corresponde a la declaración de la variable “num4” con un valor numérico entero de “5”.</p>
+                    <p>Las sentencias en JS finalizan con “;”. La imagen anterior corresponde a la declaración de la
+                        variable “num4” con un valor numérico entero de “5”.</p>
                     <h3>¿Cómo se nombran?</h3>
-                    <p>Los nombres de las variables (o identificadores) permiten distinguir una de otras. Para asignar los nombres de las variables debemos seguir ciertas reglas:</p>
-                    <ul>Un identificador de JavaScript debe comenzar con una letra, un guión bajo ( _ ) o un signo de dólar ( $ ). Los siguientes caracteres también pueden ser dígitos ( 0 - 9 ). JavaScript distingue entre mayúsculas y minúsculas (es case-sensitive).</ul>
-                    <ul>Se recomienda usar la escritura camelCase en el nombre de variables que tienen más de una palabra.</ul>
+                    <p>Los nombres de las variables (o identificadores) permiten distinguir una de otras. Para asignar
+                        los nombres de las variables debemos seguir ciertas reglas:</p>
+                    <ul>
+                        <li>
+                            <p>Un identificador de JavaScript debe comenzar con una letra, un guión bajo ( _ ) o un
+                                signo de
+                                dólar ( $ ). Los siguientes caracteres también pueden ser dígitos ( 0 - 9 ). JavaScript
+                                distingue entre mayúsculas y minúsculas (es case-sensitive).</p>
+                        </li>
+                        <li>
+                            <p>Se recomienda usar la escritura camelCase en el nombre de variables que tienen más de una
+                                palabra.</p>
+                        </li>
+                    </ul>
                 </div>
-                <div id="datos_js" class="secciones">
-                    <div>
-                        <h1>Tipos de datos en JavaScript</h1>
+            </div>
+            <div id="datos_js" class="secciones">
+                <div>
+                    <h1>Tipos de datos en JavaScript</h1>
+                </div>
+                <div>
+                    <p>Las variables de JavaScript pueden contener distintos tipos de datos: numérico, cadena de
+                        caracteres, lógicos, indefinido, null, objetos y más. El tipo de dato es la naturaleza del
+                        contenido de la variable o constante.JavaScript tiene tipado dinámico, es decir que la misma
+                        variable se puede utilizar para contener diferentes tipos de datos:</p>
+                    <div class="div-imagen">
+                        <img src="img/js4.png" alt="" class="imagen_main2">
                     </div>
-                    <div>
-                        <p>Las variables de JavaScript pueden contener distintos tipos de datos: numérico, cadena de caracteres, lógicos, indefinido, null, objetos y más. El tipo de dato es la naturaleza del contenido de la variable o constante.JavaScript tiene tipado dinámico, es decir que la misma variable se puede utilizar para contener diferentes tipos de datos:</p>
-                        <div class="div-imagen">
-                            <img src="img/js4.png" alt="" class="imagen_main2">
-                        </div>
-                        <p>JavaScript deduce cuál es el tipo de dato de la variable. El tipo de dato asociado a esa variable lo determina el dato que se almacena en ella. Y si luego se le asigna un valor de otro tipo, el tipo de la variable cambia.</p>
-                        <h3>Tipos de datos</h3>
-                        <div class="div-imagen">
-                            <img src="img/js5.jpg" alt="" class="imagen_main2">
-                        </div>
+                    <p>JavaScript deduce cuál es el tipo de dato de la variable. El tipo de dato asociado a esa
+                        variable lo determina el dato que se almacena en ella. Y si luego se le asigna un valor de
+                        otro tipo, el tipo de la variable cambia.</p>
+                    <h3>Tipos de datos</h3>
+                    <div class="div-imagen">
+                        <img src="img/js5.jpg" alt="" class="imagen_main2">
                     </div>
-                    <div id="operadores_js" class="secciones">
-                        <div>
-                            <h1>Operadores aritméticos y de asignación</h1>
-                        </div>
-                        <div>
-                            <p>El operador de asignación (=) le otorga un valor a una variable y se coloca entre la variable y el valor a asignar.</p>
-                            <p>Los operadores aritméticos se utilizan para realizar operaciones aritméticas en números:</p>
-                            <div class="div-imagen">
-                                <img src="img/js6.jpg" alt="operadores aritmeticos" class="imagen_main">
-                            </div>
-                            <p>Los operadores + y += también se pueden utilizar para agregar (concatenar) cadenas. En este contexto, el operador + se denomina operador de concatenación.</p>
-                        </div>
-                        <div>
-                            <h1>Operadores de comparación</h1>
-                        </div>
-                        <div>
-                            <p>Un operador de comparación (o relacional) compara sus operandos y devuelve un valor lógico en función de si la comparación es verdadera (true) o falsa(false). Los operandos pueden ser valores numéricos, de cadena, lógicos u objetos. Las cadenas se comparan según el orden lexicográfico estándar. En la mayoría de los casos, si los dos operadores no son del mismo tipo, JavaScript intenta convertirlos a un tipo apropiado para la comparación. Este comportamiento generalmente resulta en comparar los operadores numéricamente.</p>
-                            <div class="div-imagen">
-                                <img src="img/js7.jpg" alt="operadores de comparacion" class="imagen_main4">
-                            </div>
-                        </div>
-                        <div>
-                            <h1>Operadores prefijo y posfijo</h1>
-                        </div>
-                        <div>
-                            <p>Los afijos se anteponen o se posponen en un nombre de una variable. Cuando hablamos de prefijo nos referimos a que se antepone a la variable y el posfijo se pospone. Se utilizan para realizar operaciones aritméticas, tanto para incrementar como para decrementar el valor de una variable.</p>
-                            <div class="div-imagen">
-                                <img src="img/js9.jpg" alt="operadores prefijo y posfijo" class="imagen_main1">
-                            </div>
-                        </div>
-                        <div>
-                            <h1>Operadores logicos</h1>
-                        </div>
-                        <div>
-                            <p>Los operadores lógicos se utilizan normalmente con valores booleanos (lógicos).</p>
-                            <div class="div-imagen">
-                                <img src="img/js8.jpg" alt="operadores logicos" class="imagen_main1">
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div id="operadores_js" class="secciones">
+                <div>
+                    <h1>Operadores aritméticos y de asignación</h1>
+                </div>
+                <div>
+                    <p>El operador de asignación (=) le otorga un valor a una variable y se coloca entre la
+                        variable y el valor a asignar.</p>
+                    <p>Los operadores aritméticos se utilizan para realizar operaciones aritméticas en números:
+                    </p>
+                    <div class="div-imagen">
+                        <img src="img/js6.jpg" alt="operadores aritmeticos" class="imagen_main">
+                    </div>
+                    <p>Los operadores + y += también se pueden utilizar para agregar (concatenar) cadenas. En
+                        este contexto, el operador + se denomina operador de concatenación.</p>
+                </div>
+                <div>
+                    <h1>Operadores de comparación</h1>
+                </div>
+                <div>
+                    <p>Un operador de comparación (o relacional) compara sus operandos y devuelve un valor
+                        lógico en función de si la comparación es verdadera (true) o falsa(false). Los operandos
+                        pueden ser valores numéricos, de cadena, lógicos u objetos. </p>
+                        <P>Las cadenas se comparan
+                        según el orden lexicográfico estándar. En la mayoría de los casos, si los dos operadores
+                        no son del mismo tipo, JavaScript intenta convertirlos a un tipo apropiado para la
+                        comparación. Este comportamiento generalmente resulta en comparar los operadores
+                        numéricamente.</p>
+                    <div class="div-imagen">
+                        <img src="img/js7.jpg" alt="operadores de comparacion" class="imagen_main4">
+                    </div>
+                </div>
+                <div>
+                    <h1>Operadores prefijo y posfijo</h1>
+                </div>
+                <div>
+                    <p>Los afijos se anteponen o se posponen en un nombre de una variable. Cuando hablamos de
+                        prefijo nos referimos a que se antepone a la variable y el posfijo se pospone. Se
+                        utilizan para realizar operaciones aritméticas, tanto para incrementar como para
+                        decrementar el valor de una variable.</p>
+                    <div class="div-imagen">
+                        <img src="img/js9.jpg" alt="operadores prefijo y posfijo" class="imagen_main1">
+                    </div>
+                </div>
+                <div>
+                    <h1>Operadores logicos</h1>
+                </div>
+                <div>
+                    <p>Los operadores lógicos se utilizan normalmente con valores booleanos (lógicos).</p>
+                    <div class="div-imagen">
+                        <img src="img/js8.jpg" alt="operadores logicos" class="imagen_main1">
+                    </div>
+                </div>
+            </div>
+
+            <div id="pdf-js" class="secciones">
+                <div>
+                    <h3> Recursos de CaC en PDF</h3><br>
+                    <p>Introducción. Qué es y para qué sirve JavaScript. Variables, Tipos de Datos, Number,
+                        parseInt y parseFloat. Objeto Math. Operadores aritméticos y de Asignación.<br><br>
+                        Operadores Relacionales y de Comparación. Condicionales. Bucles.<br><br>
+                        Funciones. Arrow Functions. Scope. Callbacks y Closures.<br><br>
+                        Strings y sus métodos. Arrays.<br><br>
+                        Manipulación del DOM. Eventos en JS.<br><br>
+                        Objetos. Iterar con for in. Iterar con for of.<br><br>
+                    </p>
+                    <div class="descargas">
+
+                        <a download href="pdf/js/js1.pdf">Parte 1
+                        </a>
+                        <a download href="pdf/js/js2.pdf">Parte 2
+                        </a>
+                        <a download href="pdf/js/js3.pdf">Parte 3
+                        </a>
+                    </div>
+                </div>
             </div>
 
             <div id="videos" class="secciones">
                 <div class="iframes">
-                  <br><br>
-                  <h1>Clases Js codo a codo:</h1>
-                  <br><br>
-                  <p>Js Parte 1</p><br><br>
-                  <iframe width="640" height="360" src="https://www.youtube.com/embed/PpZWkagbW4o?list=PLabnTUPlhTJ7U277TB_8orV7RRIMy0X6Y" title="#22504  Clase 13  JS 1  2022 09 19 19 04 14" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  <p>Js Parte 2</p><br><br>
-                  <iframe width="640" height="360" src="https://www.youtube.com/embed/XJwyZPHDfqk?list=PLabnTUPlhTJ7U277TB_8orV7RRIMy0X6Y" title="#22504  Clase 14  JS 2  2022 09 22 19 01 59" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                  
-                  <p>Js Parte 3</p><br><br>                  
-                  <iframe width="640" height="360" src="https://www.youtube.com/embed/D5rx1i0X1Sw?list=PLabnTUPlhTJ7U277TB_8orV7RRIMy0X6Y" title="#22504  Clase 15  JS 3  2022 09 26 19 08 15" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  <p>Js Parte 4</p><br><br>                
-                  <iframe width="640" height="360" src="https://www.youtube.com/embed/g7fv2S84AuE?list=PLabnTUPlhTJ7U277TB_8orV7RRIMy0X6Y" title="#22504  Clase 16  JS 4  2022 09 29 19 05 59" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  <p>Js Parte 5</p><br><br>                
-                  <iframe width="640" height="360" src="https://www.youtube.com/embed/50rB-1W0OSI?list=PLabnTUPlhTJ7U277TB_8orV7RRIMy0X6Y" title="#22504  Clase 17  JS 5  2022 10 03 19 05 40" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  <p>Js Parte 6</p><br><br>                
-                  <iframe width="640" height="360" src="https://www.youtube.com/embed/yd04ecMr-w8?list=PLabnTUPlhTJ7U277TB_8orV7RRIMy0X6Y" title="#22504  Clase 18  JS 6  2022 10 06 19 10 03" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  <br><br>
-             
-                </div>
-              </div>
+                    <h1>Clases Js codo a codo:</h1>
+                    <h3>Js Parte 1</h3>
+                    <div class="Videos_tutoriales">
+                        <iframe width="640" height="360"
+                            src="https://www.youtube.com/embed/PpZWkagbW4o?list=PLabnTUPlhTJ7U277TB_8orV7RRIMy0X6Y"
+                            title="#22504  Clase 13  JS 1  2022 09 19 19 04 14" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <h3>Js Parte 2</h3>
+                    <div class="Videos_tutoriales">
+                        <iframe width="640" height="360"
+                            src="https://www.youtube.com/embed/XJwyZPHDfqk?list=PLabnTUPlhTJ7U277TB_8orV7RRIMy0X6Y"
+                            title="#22504  Clase 14  JS 2  2022 09 22 19 01 59" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <h3>Js Parte 3</h3>
+                    <div class="Videos_tutoriales">
+                        <iframe width="640" height="360"
+                            src="https://www.youtube.com/embed/D5rx1i0X1Sw?list=PLabnTUPlhTJ7U277TB_8orV7RRIMy0X6Y"
+                            title="#22504  Clase 15  JS 3  2022 09 26 19 08 15" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <h3>Js Parte 4</h3>
+                    <div class="Videos_tutoriales">
+                        <iframe width="640" height="360"
+                            src="https://www.youtube.com/embed/g7fv2S84AuE?list=PLabnTUPlhTJ7U277TB_8orV7RRIMy0X6Y"
+                            title="#22504  Clase 16  JS 4  2022 09 29 19 05 59" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <h3>Js Parte 5</h3>
+                    <div class="Videos_tutoriales">
+                        <iframe width="640" height="360"
+                            src="https://www.youtube.com/embed/50rB-1W0OSI?list=PLabnTUPlhTJ7U277TB_8orV7RRIMy0X6Y"
+                            title="#22504  Clase 17  JS 5  2022 10 03 19 05 40" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <h3>Js Parte 6</h3>
+                    <div class="Videos_tutoriales">
+                        <iframe width="640" height="360"
+                            src="https://www.youtube.com/embed/yd04ecMr-w8?list=PLabnTUPlhTJ7U277TB_8orV7RRIMy0X6Y"
+                            title="#22504  Clase 18  JS 6  2022 10 06 19 10 03" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
 
-              <div id="pdf-js" class="secciones">
-                <div>
-                    <h1>PDFs</h1>
                 </div>
-                <div>
-                    <br>
-                     <h3> Recursos de CaC en PDF</h3><br>
-                     <p>Introducción. Qué es y para qué sirve JavaScript. Variables, Tipos de Datos, Number, parseInt y parseFloat. Objeto Math. Operadores aritméticos y de Asignación.<br>
-                        Operadores Relacionales y de Comparación. Condicionales. Bucles.<br>
-                        Funciones. Arrow Functions. Scope. Callbacks y Closures.<br>
-                        Strings y sus métodos. Arrays.<br>
-                        Manipulación del DOM. Eventos en JS.<br>
-                        Objetos. Iterar con for in. Iterar con for of.<br>
-                     </p>
+            </div>
 
-                   <p> <br>
-                    <img src="img/pdf.png" height="50px" width="auto"> <a download href="pdf/js/js1.pdf" >Parte 1 </a> <br>
-                    <img src="img/pdf.png" height="50px" width="auto"> <a download href="pdf/js/js2.pdf" >Parte 2 </a> <br> 
-                    <img src="img/pdf.png" height="50px" width="auto"> <a download href="pdf/js/js3.pdf" >Parte 3 </a> <br>
-                    <br><br>       
-                  </p>
+
+            <div id="enlaces" class="secciones">
+                <h1>Enlaces de interés:</h1>
+                <div class="descargas-columnas">
+                <a href="https://www.w3schools.com/js/" target="_blank">Tutorial de w3schools</a> <br>
+                <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank"> Tutorial de
+                    Mozilla </a> <br>
+                <a href="https://www.freecodecamp.org/espanol/news/aprende-javascript-curso-completo-desde-cero/"
+                    target="_blank"> Tutorial de Freecodecamp</a> <br>
+                </div>
+            </div>
+    </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+
+            <div class="footer_img">
+                <a href="index.html">
+                    <img src="img/icons8-coding-96.png" alt="Codeando" id="logo_footer">
+                </a>
+            </div>
+
+            <p>© 2022 Codeando</p>
+
+            <div class="iconos_footer">
+                <a href="https://github.com/Lautarodelafuente/Codeando_codo_a_codo" target="_blank"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
 
-              <div id="enlaces" class="secciones">
-                <h1>Enlaces de interés:</h1>
-               <br><br>
-                <a href="https://www.w3schools.com/js/" target="_blank">Tutorial de w3schools</a> <br>
-                <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank"> Tutorial de Mozilla </a> <br>
-                <a href="https://www.freecodecamp.org/espanol/news/aprende-javascript-curso-completo-desde-cero/" target="_blank"> Tutorial de Freecodecamp</a> <br>
-                <br><br>
-                 </div>
-               </div>
-        </main>
-
-        <footer>
-            <div class="footer">
-    
-                <div class="footer_img">
-                    <a href="index.html">
-                        <img src="img/icons8-coding-96.png" alt="Codeando" id="logo_footer">
-                    </a>
-                </div>
-    
-                <p>© 2022 Codeando</p>
-    
-                <div class="iconos_footer">
-                    <a href="https://github.com/Lautarodelafuente/Codeando_codo_a_codo" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-    
-        </footer>
+    </footer>
     </div>
 </body>

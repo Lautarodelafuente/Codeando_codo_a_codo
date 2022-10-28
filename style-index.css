@@ -78,10 +78,10 @@ a:hover {
     overflow: hidden;
     border-right: .15em solid orange;
     white-space: nowrap;
-    font-size: 24px;
     font-weight: 900;
     letter-spacing: inherit;
     text-shadow: inherit;
+    font-size: min(max(20px, 2.5vw), 30px);
     margin: 0 auto;
     letter-spacing: .15em;
     animation:
@@ -139,10 +139,6 @@ a:hover {
 
     .logo {
         width: max-content;
-    }
-
-    .Nombre-pagina{
-        font-size: 20.5px;
     }
 
 
@@ -647,10 +643,6 @@ a:hover {
         padding: 0;
         margin: 50px 0 30px 0;
         /* border: solid white 1px ; */
-    }
-
-    .Nombre-pagina{
-        font-size: 22.5px;
     }
 } 
 
